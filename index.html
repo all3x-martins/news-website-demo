@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Últimas notícias sobre o sistema Android e seus desenvolvimentos mais recentes.">
+    <meta name="keywords" content="Notícias Android, Mascote Android, Tecnologia, Bugdroid, Novidades Android">
+    <title>Tech Explorer</title>
+    <link rel="shortcut icon" href="/assets/imagens/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<header>
+    <div class="menu">
+        <a href="index.html">
+            <img src="/assets/imagens/logo.png" alt="Logo">    
+        </a>
+        <nav>
+            <a href="#">Notícias</a>
+            <a href="#">Últimas Notícias</a>
+            <a href="#">Mais Lidas</a>
+            <button class="search-toggle" onclick="toggleSearch()">🔍</button>
+            <form action="/search.html" method="get" id="search-form" class="search-form">
+                <input type="text" name="q" placeholder="Buscar..." class="search-input">
+                <button type="submit" class="search-button">🔍</button>
+            </form>
+        </nav>
+    </div>
+</header>
+    <main>
+        <article>
+            <h1>Últimas Notícias</h1>
+
+            <section class="noticia">
+                <img class="destaque" src="/assets/imagens/dan-droids-pq.png" alt="" srcset="">
+                <div class="titulo">
+                    <h2><a href="#">História do Mascote do Android: De onde veio o Bugdroid?</a></h2>
+                    <p class="resumo">Você sabia que o simpático mascote do Android tem uma história bastante interessante? Veja como o Bugdroid surgiu e se tornou um ícone do mundo tecnológico...</p>
+                    <a href="#" class="leia-mais">Leia mais &raquo;</a>
+                </div>
+            </section>
+
+            <section class="noticia">
+                <img class="destaque" src="/assets/imagens/Android.png" alt="" srcset="">
+                <div class="titulo">
+                    <h2><a href="#">Como o Android mudará a forma como interagimos com dispositivos móveis</a></h2>
+                    <p class="resumo">O Android, um dos sistemas operacionais mais utilizados em dispositivos móveis, está passando por grandes mudanças que prometem revolucionar a interação do usuário. Descubra mais sobre essas inovações...</p>
+                    <a href="#" class="leia-mais">Leia mais &raquo;</a>
+                </div>
+            </section>
+
+            <section class="noticia">
+                <img class="destaque" src="/assets/imagens/Android14.png" alt="" srcset="">
+
+                <div class="titulo">
+                    <h2><a href="#">Android 14: O que esperar da próxima atualização do sistema</a></h2>
+                    <p class="resumo">Com a chegada do Android 14, muitos recursos novos estão sendo esperados. Saiba tudo sobre as novidades que a atualização trará e como elas podem impactar o uso diário...</p>
+                    <a href="#" class="leia-mais">Leia mais &raquo;</a>
+                </div>
+            </section>
+
+            <section class="noticia">
+                <img class="destaque" src="/assets/imagens/ia.jpg" alt="" srcset="">
+                <div class="titulo">
+                    <h2><a href="#">Como o Android está integrando Inteligência Artificial aos seus dispositivos</a></h2>
+                    <p class="resumo">A Inteligência Artificial é uma das maiores tendências no mercado de tecnologia, e o Android está incorporando essa tecnologia de forma única. Veja como isso será implementado...</p>
+                    <a href="#" class="leia-mais">Leia mais &raquo;</a>
+                </div>
+            </section>
+        </article>
+    </main>
+    <script>
+        function toggleSearch() {
+        var form = document.getElementById('search-form');
+        form.classList.toggle('visible');
+    }
+    </script>
+</body>
+</html>
