@@ -40,6 +40,11 @@ header {
     height: 115px; 
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
 /* Estilos para os links do menu */
 nav > a {
     padding: 12px 30px; 
@@ -56,6 +61,11 @@ nav > a:hover {
     text-decoration: underline; 
     border-radius: 5px; 
     transform: translateY(-3px); 
+}
+
+.search-toggle {
+    background-color: transparent;
+    border: none
 }
 
 /* Estilo do formulário de busca */
