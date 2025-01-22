@@ -3,6 +3,12 @@
 /* Definindo variáveis de fontes personalizadas */
 :root {
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --verde-claro: #4CAF50;  /* Verde claro */
+    --verde-escuro: #388E3C; /* Verde escuro */
+    --azul-claro: #52A8F2;   /* Azul claro */
+    --azul-escuro: #1A73E8;  /* Azul escuro */
+    --cinza-claro: #F1F1F1;  /* Cinza claro */
+    --cinza-escuro: #424242; /* Cinza escuro */
 }
 
 /* Resetando margens e preenchimentos de todos os elementos */
@@ -34,7 +40,6 @@ header {
     margin: 0 auto; 
 }
 
-/* Estilo da imagem logo do menu */
 .menu > img {
     width: 300px; 
     height: 115px; 
@@ -43,6 +48,7 @@ header {
 nav {
     display: flex;
     align-items: center;
+    gap: 15px; 
 }
 
 /* Estilos para os links do menu */
@@ -63,9 +69,11 @@ nav > a:hover {
     transform: translateY(-3px); 
 }
 
+/* Estilo do ícone de busca */
 .search-toggle {
     background-color: transparent;
-    border: none
+    border: none;
+    cursor: pointer;  
 }
 
 /* Estilo do formulário de busca */
@@ -74,12 +82,11 @@ nav > a:hover {
     transition: all 0.3s ease; 
 }
 
-/* Torna o formulário de busca visível quando a classe "visible" é adicionada */
 .search-form.visible {
     display: flex; 
+    align-items: center;  
 }
 
-/* Estilo do campo de entrada do formulário de busca */
 .search-input {
     padding: 8px; 
     font-size: 1em; 
@@ -90,7 +97,6 @@ nav > a:hover {
     transition: width 0.3s ease; 
 }
 
-/* Estilo do botão de envio da busca */
 .search-button {
     background-color: transparent; 
     border: none; 
@@ -132,6 +138,30 @@ main a:hover {
     background-color: white;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: slideIn 0.7s ease-out forwards; 
+}
+
+/* Animação de deslizamento */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo das imagens de destaque */
+.destaque {
+    width: 150px;
+    height: auto; 
+    border-radius: 5px; 
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover; 
 }
 
 /* Estilo do título da notícia */
@@ -152,25 +182,45 @@ main a:hover {
     width: 100%;
     font-weight: bold;
     text-decoration: none;
-    color: #808080; 
+    color: #4CAF50; 
     text-align: right;
     align-self: flex-end;
+    transition: color 0.3s ease; 
 }
 
 .noticia a.leia-mais:hover {
     text-decoration: underline;
-    color: greenyellow;
-}
-
-/* Estilo das imagens de destaque */
-.destaque {
-    width: 150px; 
-    border-radius: 5px; 
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); 
+    color: #1A73E8; 
 }
 
 /* Estilo do título flexível dentro da notícia */
 .titulo {
     display: flex; 
     flex-flow: row wrap; 
+    gap: 10px;  
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;  
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;  
+        align-items: flex-start;
+    }
+
+    .search-input {
+        width: 100%;  
+    }
+
+    .noticia {
+        flex-direction: column;  
+    }
+
+    .destaque {
+        width: 100%;  
+    }
 }
