@@ -1,6 +1,6 @@
 .menu {
    background-color: var(--cor-bg-card);
-   padding: 1rem;
+   padding: 1rem 3rem;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -17,10 +17,12 @@ nav a {
    padding: 0.5rem 1rem;
    display: inline-block;
    transition: background-color 0.3s ease;
+   border-radius: 8px;
 }
 
 nav a:hover {
    background-color: var(--cor-nav-link-hover);
+   border-radius: 8px;
 }
 
 .search-toggle {
