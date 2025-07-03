@@ -14,30 +14,27 @@
   <header>
     <div class="menu">
       <a href="index.html"><img src="/assets/imagens/logos/logo.png" alt="Logo Tech Explorer"></a>
+      <form action="/search.html" method="get" id="search-form" class="search-form">
+        <input type="text" name="q" class="search-input" placeholder="Buscar...">
+        <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
       <nav>
         <a href="#">Início</a>
         <a href="#">Últimas</a>
         <a href="#">Android</a>
         <a href="#">Inteligência Artificial</a>
         <a href="pages/mais-lidas.html">Mais Lidas</a>
-        <button class="search-toggle" onclick="toggleSearch()" aria-label="Abrir e Fechar Barra de Pesquisa">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-        <form action="/search.html" method="get" id="search-form" class="search-form">
-          <input type="text" name="q" class="search-input" placeholder="Buscar...">
-          <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
       </nav>
     </div>
   </header>
   <main>
     <section class="destaque">
       <article>
-        <img src="assets/imagens/noticias/android14-novos-recursos-privacidade-ia.png" alt="Android 14: Privacidade e IA em Foco">
+        <img src="assets/imagens/noticias/android-15-novos-recursos-privacidade-ia.png" alt="Android 14: Privacidade e IA em Foco">
         <div>
-          <h1>Android 14 chega com novos recursos de privacidade e IA</h1>
+          <h1>Android 15 chega com novos recursos de privacidade e IA</h1>
           <p>A mais recente versão do sistema promete maior segurança, integração com IA generativa e recursos inéditos para desenvolvedores.</p>
-          <a href="#">Leia mais &raquo;</a>
+          <a href="pages/noticia-android15.html">Leia mais &raquo;</a>
         </div>
       </article>
     </section>
@@ -89,9 +86,9 @@
     <div class="footer-container">
       <p>&copy; 2025 Tech Explorer. Todos os direitos reservados.</p>
       <nav>
-        <a href="#">Sobre</a> |
-        <a href="#">Contato</a> |
-        <a href="#">Política de Privacidade</a>
+        <a href="pages/sobre.html">Sobre</a> |
+        <a href="pages/contato.html">Contato</a> |
+        <a href="pages/privacidade.html">Política de Privacidade</a>
       </nav>
     </div>
   </footer>

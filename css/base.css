@@ -1,4 +1,5 @@
 :root {
+   --color-surface-dark: #1A252C;
    --cor-bg-principal: #f4f4f4;
    --cor-bg-card: #fff;
    --cor-bg-destaque: #fafbfc;
@@ -19,7 +20,7 @@
    --cor-footer-bg: #333;
    --cor-footer-text: #fff;
    --cor-nav-link: #333;
-   --cor-nav-link-hover: #ddd;
+   --cor-nav-link-hover: #2F8F73;
    --cor-img-bg: #edf2f7;
    --cor-input-borda: #ccc;
 }

@@ -1,5 +1,6 @@
 .menu {
-   background-color: var(--cor-bg-card);
+   background-color: var(--color-surface-dark);
+   color: #fff;
    padding: 1rem 3rem;
    display: flex;
    justify-content: space-between;
@@ -12,7 +13,7 @@
 }
 
 nav a {
-   color: var(--cor-nav-link);
+   color: #fff;
    text-decoration: none;
    padding: 0.5rem 1rem;
    display: inline-block;
@@ -33,27 +34,19 @@ nav a:hover {
    margin-left: 1rem;
 }
 
-.search-form {
-   display: none;
-}
-
-.search-form.visible {
-   display: block;
-}
-
 .search-input {
-   padding: 0.5rem;
+   width: 350px;
+   padding: 0.8rem;
    border: 1px solid var(--cor-input-borda);
    border-radius: 4px;
 }
 
 .search-button {
-   background-color: var(--cor-primaria);
    color: #fff;
-   padding: 0.5rem 1rem;
+   font-size: 22px;
    border: none;
-   border-radius: 4px;
    cursor: pointer;
+   background: none;
 }
 
 main {
@@ -205,7 +198,7 @@ main {
 }
 
 footer {
-   background-color: var(--cor-footer-bg);
+   background-color: var(--color-surface-dark);
    color: var(--cor-footer-text);
    text-align: center;
    padding: 1rem;
