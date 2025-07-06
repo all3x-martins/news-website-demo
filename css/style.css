@@ -116,6 +116,35 @@ main {
    letter-spacing: 0.5px;
 }
 
+.row-noticias {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.list-noticia {
+   background: var(--cor-bg-destaque);
+   border-radius: 8px;
+   box-shadow: var(--cor-sombra-noticia);
+   display: flex;
+   transition: transform 0.18s, box-shadow 0.18s;
+   border: 1px solid var(--cor-borda);
+   overflow: hidden;
+}
+
+.list-noticia img {
+   width: 200px;
+   height: 150px;
+   object-fit: fill;
+   background: var(--cor-img-bg);
+   display: block;
+   border-radius: 8px;
+}
+
+.text-extended {
+   color: #555;
+}
+
 .grid-noticias {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
