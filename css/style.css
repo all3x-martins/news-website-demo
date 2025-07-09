@@ -290,6 +290,75 @@ footer a {
    margin: 0 0.5rem;
 }
 
+.footer-news {
+  background: #1a1a1a;
+  color: #f3f3f3;
+  padding: 2rem 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 180px;
+  min-width: 180px;
+  margin-bottom: 1rem;
+}
+
+.footer-section h3, .footer-section h4 {
+  color: #ffd600;
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.4rem;
+}
+
+.footer-section ul li a {
+  color: #f3f3f3;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffd600;
+}
+
+.footer-social a {
+  margin-right: 0.7rem;
+  color: #f3f3f3;
+  font-size: 1.4rem;
+  transition: color 0.2s;
+}
+
+.footer-social a:hover {
+  color: #ffd600;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
 @media (max-width: 900px) {
    .grid-noticias {
       grid-template-columns: 1fr;
