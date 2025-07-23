@@ -1,0 +1,28 @@
+{
+  "name": "blog-tech-explorer",
+  "version": "1.0.0",
+  "description": "Bem-vindo ao **Blog Tech Explorer**, seu destino para explorar o mundo do **Android**! Aqui você encontrará artigos, notícias, análises e muito mais sobre o ecossistema Android, desde as últimas atualizações até dicas e truques para melhorar a sua experiência com dispositivos Android.",
+  "homepage": "https://github.com/all3x-martins/blog-tech-explorer#readme",
+  "bugs": {
+    "url": "https://github.com/all3x-martins/blog-tech-explorer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/all3x-martins/blog-tech-explorer.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": ".prettierrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "eslint": "^9.31.0",
+    "globals": "^16.3.0",
+    "prettier": "3.6.2",
+    "stylelint": "^16.21.1",
+    "stylelint-config-standard": "^38.0.0"
+  }
+}
