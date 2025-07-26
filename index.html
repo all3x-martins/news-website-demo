@@ -1,137 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="As principais notícias sobre tecnologia e Android em um só lugar.">
-  <title>Tech Explorer</title>
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="/assets/imagens/favicon/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-  <header>
-    <div class="menu">
-      <a href="index.html"><img src="/assets/imagens/logos/logo.png" alt="Logo Tech Explorer"></a>
-      <form action="" method="get" id="search-form" class="search-form">
-        <input type="text" name="q" class="search-input" placeholder="Buscar...">
-        <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-      </form>
-      <nav>
-        <a href="index.html">Início</a>
-        <a href="pages/noticias.html">Últimas notícias</a>
-        <a href="pages/mais-lidas.html">Mais Lidas</a>
-        <a href="pages/sobre.html">Sobre Nós</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="destaque">
-      <article>
-        <img src="assets/imagens/noticias/android-15-novos-recursos-privacidade-ia.png" alt="Android 14: Privacidade e IA em Foco">
-        <div>
-          <h1>Android 15 chega com novos recursos de privacidade e IA</h1>
-          <p>A mais recente versão do sistema promete maior segurança, integração com IA generativa e recursos inéditos para desenvolvedores.</p>
-          <a href="pages/noticia-android15.html">Leia mais &raquo;</a>
-        </div>
-      </article>
-    </section>
-    <section class="ultimas-noticias">
-      <h2>Últimas Notícias</h2>
-      <div class="grid-noticias">
-        <article class="noticia">
-          <img src="assets/imagens/noticias/dan-droids-pq.png" alt="mascote do android, origem do bugdroid">
-          <div class="info-noticia">
-            <h3><a href="#">Conheça a história do Bugdroid</a></h3>
-            <p>O mascote do Android, apelidado de Bugdroid, surgiu com um propósito curioso e uma origem que surpreende até os fãs da tecnologia.</p>
-            <a href="#">Leia mais &raquo;</a>
-          </div>
-        </article>
-        <article class="noticia">
-          <img src="assets/imagens/noticias/Android-e-ia-parceria-para-o-futuro.png" alt="Android e Inteligência Artificial">
-          <div class="info-noticia">
-            <h3><a href="#">Android e IA: parceria para o futuro</a></h3>
-            <p>Descubra como o Android está se reinventando com inteligência artificial para oferecer experiências mais personalizadas.</p>
-            <a href="#">Leia mais &raquo;</a>
-          </div>
-        </article>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="As principais notícias sobre tecnologia e Android em um só lugar."
+    />
+    <title>Tech Explorer</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/imagens/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <a href="index.html"
+          ><img src="/assets/imagens/logos/logo.png" alt="Logo Tech Explorer"
+        /></a>
+        <form action="" method="get" id="search-form" class="search-form">
+          <input
+            type="text"
+            name="q"
+            class="search-input"
+            placeholder="Buscar..."
+          />
+          <button type="submit" class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <nav>
+          <a href="index.html">Início</a>
+          <a href="pages/noticias.html">Últimas notícias</a>
+          <a href="pages/sobre.html">Sobre Nós</a>
+        </nav>
       </div>
-    </section>
-    <section class="categoria">
-      <h2>Dicas para Devs Android</h2>
-      <div class="grid-noticias">
-        <article class="noticia">
-          <img src="assets/imagens/noticias/mudanças-na-interface-do-android.png" alt="Mudanças na interface do Android">
-          <div class="info-noticia">
-            <h3><a href="#">Mudanças na interface do Android</a></h3>
-            <p>O novo visual foca em acessibilidade e agilidade. Veja como ele impacta a experiência de uso.</p>
-            <a href="#">Leia mais &raquo;</a>
+    </header>
+    <main>
+      <section class="destaque">
+        <article>
+          <img
+            src="assets/imagens/noticias/android-15-novos-recursos-privacidade-ia.png"
+            alt="Android 14: Privacidade e IA em Foco"
+          />
+          <div>
+            <h1>Android 15 chega com novos recursos de privacidade e IA</h1>
+            <p>
+              A mais recente versão do sistema promete maior segurança,
+              integração com IA generativa e recursos inéditos para
+              desenvolvedores.
+            </p>
           </div>
         </article>
+      </section>
+      <section class="ultimas-noticias">
+        <h2>Últimas Notícias</h2>
+        <div class="grid-noticias">
+          <article class="noticia">
+            <img
+              src="assets/imagens/noticias/dan-droids-pq.png"
+              alt="mascote do android, origem do bugdroid"
+            />
+            <div class="info-noticia">
+              <h3><a href="#">Conheça a história do Bugdroid</a></h3>
+              <p>
+                O mascote do Android, apelidado de Bugdroid, surgiu com um
+                propósito curioso e uma origem que surpreende até os fãs da
+                tecnologia.
+              </p>
+            </div>
+          </article>
+          <article class="noticia">
+            <img
+              src="assets/imagens/noticias/Android-e-ia-parceria-para-o-futuro.png"
+              alt="Android e Inteligência Artificial"
+            />
+            <div class="info-noticia">
+              <h3><a href="#">Android e IA: parceria para o futuro</a></h3>
+              <p>
+                Descubra como o Android está se reinventando com inteligência
+                artificial para oferecer experiências mais personalizadas.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="categoria">
+        <h2>Dicas para Devs Android</h2>
+        <div class="grid-noticias">
+          <article class="noticia">
+            <img
+              src="assets/imagens/noticias/mudanças-na-interface-do-android.png"
+              alt="Mudanças na interface do Android"
+            />
+            <div class="info-noticia">
+              <h3><a href="#">Mudanças na interface do Android</a></h3>
+              <p>
+                O novo visual foca em acessibilidade e agilidade. Veja como ele
+                impacta a experiência de uso.
+              </p>
+            </div>
+          </article>
 
-        <article class="noticia">
-          <img src="assets/imagens/noticias/ferramentas-para-devs-android.png" alt="Ferramentas para devs Android">
-          <div class="info-noticia">
-            <h3><a href="#">Ferramentas para devs Android em 2025</a></h3>
-            <p>As novas APIs trazem facilidades que vão acelerar o desenvolvimento de apps nativos.</p>
-            <a href="#">Leia mais &raquo;</a>
-          </div>
-        </article>
+          <article class="noticia">
+            <img
+              src="assets/imagens/noticias/ferramentas-para-devs-android.png"
+              alt="Ferramentas para devs Android"
+            />
+            <div class="info-noticia">
+              <h3><a href="#">Ferramentas para devs Android em 2025</a></h3>
+              <p>
+                As novas APIs trazem facilidades que vão acelerar o
+                desenvolvimento de apps nativos.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <section class="newsletter">
+      <div class="newsletter-container">
+        <h2>Assine nossa Newsletter</h2>
+        <p>
+          Receba as principais notícias e novidades sobre Android e tecnologia
+          diretamente no seu e-mail.
+        </p>
+        <form class="newsletter-form">
+          <input type="email" name="email" placeholder="Seu e-mail" required />
+          <button type="submit">Assinar</button>
+        </form>
+        <small>Você pode cancelar a inscrição a qualquer momento.</small>
       </div>
     </section>
-  </main>
-  <section class="newsletter">
-    <div class="newsletter-container">
-      <h2>Assine nossa Newsletter</h2>
-      <p>Receba as principais notícias e novidades sobre Android e tecnologia diretamente no seu e-mail.</p>
-      <form class="newsletter-form">
-        <input type="email" name="email" placeholder="Seu e-mail" required>
-        <button type="submit">Assinar</button>
-      </form>
-      <small>Você pode cancelar a inscrição a qualquer momento.</small>
-    </div>
-  </section>
-  <footer class="footer-news">
-  <div class="footer-container">
-    <div class="footer-main">
-      <div class="footer-section">
-        <h3>Tech Explorer</h3>
-        <p>Seu portal de notícias sobre tecnologia, inovação e tendências do universo Android.</p>
-      </div>
-      <div class="footer-section">
-        <h4>Links úteis</h4>
-        <ul>
-          <li><a href="/index.html">Início</a></li>
-          <li><a href="/pages/sobre.html">Sobre</a></li>
-          <li><a href="/pages/contato.html">Contato</a></li>
-          <li><a href="/pages/privacidade.html">Política de Privacidade</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Categorias</h4>
-        <ul>
-          <li><a href="#">Android</a></li>
-          <li><a href="#">Inteligência Artificial</a></li>
-          <li><a href="#">Desenvolvimento</a></li>
-          <li><a href="#">Tutoriais</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Siga-nos</h4>
-        <div class="footer-social">
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    <footer class="footer-news">
+      <div class="footer-container">
+        <div class="footer-main">
+          <div class="footer-section">
+            <h3>Tech Explorer</h3>
+            <p>
+              Seu portal de notícias sobre tecnologia, inovação e tendências do
+              universo Android.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Links úteis</h4>
+            <ul>
+              <li>
+                <a href="/index.html">Início</a>
+              </li>
+              <li>
+                <a href="/pages/sobre.html">Sobre</a>
+              </li>
+              <li>
+                <a href="/pages/contato.html">Contato</a>
+              </li>
+              <li>
+                <a href="/pages/privacidade.html">Política de Privacidade</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Categorias</h4>
+            <ul>
+              <li><a href="#">Android</a></li>
+              <li><a href="#">Inteligência Artificial</a></li>
+              <li><a href="#">Desenvolvimento</a></li>
+              <li><a href="#">Tutoriais</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Siga-nos</h4>
+            <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Tech Explorer. Todos os direitos reservados.</p>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Tech Explorer. Todos os direitos reservados.</p>
-    </div>
-  </div>
-</footer>
-<script src="js/ui.js"></script>
-</body>
+    </footer>
+    <script src="js/filtro-busca.js"></script>
+  </body>
 </html>
