@@ -1,47 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Sobre | Blog Tech Explorer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="icon" href="/assets/imagens/favicon/favicon.ico">
-</head>
-<body>
-  <header class="menu">
-    <img src="/assets/imagens/logos/logo.png" alt="Logo do Blog Tech Explorer">
-    <form action="/search.html" method="get" id="search-form" class="search-form">
-      <input type="text" name="q" class="search-input" placeholder="Buscar...">
-      <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </form>
-    <nav>
-      <a href="/index.html">Início</a>
-      <a href="/pages/noticias.html">Notícias</a>
-      <a href="/pages/contato.html">Contato</a>
-    </nav>
-  </header>
-  <main style="max-width: 850px; margin: 2rem auto; background: var(--cor-bg-card); border-radius: 12px; box-shadow: var(--cor-sombra-menu); padding: 2rem;">
-    <h1 style="color: var(--cor-titulo-destaque); margin-bottom: 1rem;">Sobre o Blog Tech Explorer</h1>
-    <p>
-      O <strong>Blog Tech Explorer</strong> nasceu da paixão por tecnologia, inovação e informação de qualidade. Nosso objetivo é trazer as principais novidades do universo mobile, tendências em desenvolvimento, guias para desenvolvedores e análises sobre o impacto da tecnologia no dia a dia.
-    </p>
-    <p>
-      Aqui você encontra matérias aprofundadas, notícias atualizadas e dicas práticas para quem quer ficar por dentro do que realmente importa no mundo Android e mobile.
-    </p>
-    <p>
-      Seja você um desenvolvedor, entusiasta ou apenas curioso, o Tech Explorer é o seu ponto de encontro para explorar o futuro da tecnologia.
-    </p>
-  </main>
-  <footer>
-    <div class="footer-container">
-      <p>&copy; 2025 Tech Explorer. Todos os direitos reservados.</p>
-      <nav>
-        <a href="pages/sobre.html">Sobre</a> |
-        <a href="pages/contato.html">Contato</a> |
-        <a href="pages/privacidade.html">Política de Privacidade</a>
-      </nav>
-    </div>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sobre | Blog Tech Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="/assets/imagens/favicon/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <a href="index.html"
+          ><img
+            class="logo"
+            src="/assets/imagens/logos/logo.png"
+            alt="Logo Tech Explorer"
+        /></a>
+        <form class="search-form">
+          <input type="text" class="search-input" placeholder="Buscar..." />
+          <button type="submit" class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <nav>
+          <a href="/">Início</a>
+          <a href="/pages/noticias.html">Notícias</a>
+          <a href="#">Categorias</a>
+          <a href="/pages/contato.html">Contato</a>
+        </nav>
+      </div>
+    </header>
+    <main
+      style="
+        max-width: 900px;
+        margin: 2.5rem auto;
+        background: var(--cor-bg-card);
+        border-radius: 14px;
+        box-shadow: var(--cor-sombra-menu);
+        padding: 2.8rem 2rem;
+      "
+    >
+      <h1 style="color: var(--cor-titulo-destaque); margin-bottom: 0.7rem">
+        Sobre o Tech Explorer
+      </h1>
+      <p
+        style="
+          font-size: 1.14rem;
+          color: var(--cor-texto-secundario);
+          margin-bottom: 1.6rem;
+        "
+      >
+        Bem-vindo ao <b>Tech Explorer</b>, o seu portal fictício para explorar o
+        universo da tecnologia! Aqui, inovação, curiosidade e imaginação se
+        encontram para inspirar desenvolvedores, entusiastas e curiosos do mundo
+        digital.
+      </p>
+
+      <section style="margin-bottom: 2.7rem">
+        <h2 style="color: var(--cor-titulo-secundario); margin-bottom: 0.6rem">
+          Quem Somos
+        </h2>
+        <p>
+          O Tech Explorer foi fundado em 2024 por um grupo de robôs apaixonados
+          por bytes, café virtual e memes tech. Nosso time é formado por
+          especialistas fictícios em inteligência artificial, gadgets,
+          programação e futurologia digital. Juntos, criamos conteúdos
+          imaginários para servir de exemplo e inspiração para projetos reais —
+          ou simplesmente para divertir quem passa por aqui!
+        </p>
+      </section>
+
+      <section style="margin-bottom: 2.7rem">
+        <h2 style="color: var(--cor-titulo-secundario); margin-bottom: 0.6rem">
+          Nossa Missão
+        </h2>
+        <p>
+          <i>“Transformar dados fictícios em conhecimento de verdade.”</i><br />
+          Nosso objetivo é mostrar como a tecnologia pode ser descomplicada,
+          divertida e acessível. Mesmo sendo um site de demonstração, levamos a
+          sério a criatividade: aqui você encontrará notícias inventadas,
+          análises de produtos que talvez nunca existam e entrevistas com
+          personalidades tecnológicas imaginárias.
+        </p>
+      </section>
+
+      <section style="margin-bottom: 2.7rem">
+        <h2 style="color: var(--cor-titulo-secundario); margin-bottom: 0.6rem">
+          O que você encontra aqui?
+        </h2>
+        <ul style="margin-left: 1.2rem">
+          <li>
+            Matérias sobre inovações fictícias: carros voadores, smartphones
+            invisíveis, IA que faz café e muito mais.
+          </li>
+          <li>
+            Dicas e tutoriais: como programar um robô para lavar a louça ou
+            construir um servidor usando bloquinhos de montar.
+          </li>
+          <li>
+            Entrevistas com figuras lendárias como Ada Lovelace (direto do
+            passado) e robôs do futuro.
+          </li>
+          <li>
+            Seção de humor tech: piadas de programador, memes de bugs e
+            gambiarras épicas.
+          </li>
+        </ul>
+      </section>
+
+      <section style="margin-bottom: 2.7rem">
+        <h2 style="color: var(--cor-titulo-secundario); margin-bottom: 0.6rem">
+          Por que este site existe?
+        </h2>
+        <p>
+          O Tech Explorer é um projeto fictício criado para servir como modelo
+          em portfólios, testes de layout, exemplos para aulas de programação e
+          brincadeiras entre amigos geeks. Nenhuma notícia publicada reflete a
+          realidade, mas todas têm um toque de criatividade e bom humor.
+        </p>
+      </section>
+
+      <section>
+        <h2 style="color: var(--cor-titulo-secundario); margin-bottom: 0.6rem">
+          Entre em Contato!
+        </h2>
+        <p>
+          Quer sugerir uma pauta inventada, notou um bug imaginário ou deseja
+          clonar o projeto? <br />
+          Fale com a nossa equipe de robôs através da
+          <a
+            href="/pages/contato.html"
+            style="color: var(--cor-nav-link); font-weight: bold"
+            >página de contato</a
+          >.
+        </p>
+      </section>
+      <hr style="margin: 2.5rem 0" />
+      <p
+        style="
+          text-align: center;
+          color: var(--cor-texto-secundario);
+          font-size: 0.96rem;
+        "
+      >
+        <b>Aviso:</b> Este site é 100% fictício e serve apenas para demonstração
+        de layout, design e criatividade web. Nenhuma informação aqui deve ser
+        levada a sério!
+      </p>
+    </main>
+    <footer class="footer-news">
+      <div class="footer-container">
+        <div class="footer-main">
+          <div class="footer-section">
+            <img
+              class="logo-footer"
+              src="/assets/imagens/logos/logo.png"
+              alt="Logo Tech Explorer"
+            />
+            <p>
+              Seu portal de notícias sobre tecnologia, inovação e tendências do
+              universo Android.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Links úteis</h4>
+            <ul>
+              <li>
+                <a href="/index.html">Início</a>
+              </li>
+              <li>
+                <a href="/pages/sobre.html">Sobre</a>
+              </li>
+              <li>
+                <a href="/pages/contato.html">Contato</a>
+              </li>
+              <li>
+                <a href="/pages/privacidade.html">Política de Privacidade</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Categorias</h4>
+            <ul>
+              <li><a href="#">Android</a></li>
+              <li><a href="#">Inteligência Artificial</a></li>
+              <li><a href="#">Desenvolvimento</a></li>
+              <li><a href="#">Tutoriais</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Siga-nos</h4>
+            <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Tech Explorer. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

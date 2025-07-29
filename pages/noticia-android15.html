@@ -1,115 +1,238 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Android 15: Nova era de IA e Privacidade</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="icon" href="/assets/imagens/favicon/favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-  <header class="menu">
-    <img src="/assets/imagens/logos/logo.png" alt="Logo do Blog Tech Explorer">
-    <form action="/search.html" method="get" id="search-form" class="search-form">
-      <input type="text" name="q" class="search-input" placeholder="Buscar...">
-      <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </form>
-    <nav>
-      <a href="/index.html">Início</a>
-      <a href="/pages/noticias.html">Últimas notícias</a>
-      <a href="/pages/contato.html">Contato</a>
-    </nav>
-  </header>
-  <main class="conteudo-noticia" style="max-width: 900px; margin: 2rem auto; background: var(--cor-bg-card); border-radius: 12px; box-shadow: var(--cor-sombra-menu); padding: 2rem;">
-    <article>
-      <header>
-        <h1 style="font-size: 2.3rem; color: var(--cor-titulo-destaque); margin: 0 0 0.5rem 0;">Android 15 inaugura nova era de inteligência artificial e privacidade</h1>
-        <h2 style="font-size: 1.4rem; color: var(--cor-texto-secundario); margin: 0 0 1.5rem 0; font-weight: 400;">
-          Sistema aposta em IA generativa, automações contextuais e controles avançados de segurança digital.
-        </h2>
-        <p class="data-publicacao" style="color: var(--cor-nav-link); font-size: 0.95rem; margin-bottom: 0.2rem;">Publicado em 03/07/2025</p>
-        <img src="/assets/imagens/noticias/android-15-novos-recursos-privacidade-ia.png" alt="Android 15: IA e Privacidade" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 1.5rem;">
-      </header>
-      <section style="line-height: 1.7; color: var(--cor-texto)">
-        <p>
-          O Google revelou oficialmente o <strong>Android 15</strong>, trazendo uma série de recursos inovadores que prometem transformar a experiência mobile. A nova versão aposta fortemente na integração de inteligência artificial generativa, automações contextuais personalizadas e melhorias substanciais nos controles de privacidade.
-        </p>
-        <h3 style="margin-top: 2rem; color: var(--cor-titulo-secundario);">IA generativa no centro da experiência do usuário</h3>
-        <p>
-          O Android 15 torna a IA parte fundamental do sistema operacional. O assistente do sistema está mais inteligente e proativo, capaz de sugerir ações, automatizar tarefas e adaptar a interface conforme o comportamento do usuário. Ferramentas como sugestões de texto, respostas automáticas e recomendações de apps são geradas em tempo real, elevando a produtividade e a personalização.
-        </p>
-        <h3 style="margin-top: 2rem; color: var(--cor-titulo-secundario);">Privacidade elevada a outro nível</h3>
-        <p>
-          Privacidade é um dos pilares do Android 15. A atualização oferece controles mais granulares de permissões, notificações sobre acessos sensíveis e painéis de transparência de dados. O usuário pode monitorar, em tempo real, quais aplicativos acessam informações pessoais, além de revogar permissões de forma ágil e intuitiva.
-        </p>
-        <h3 style="margin-top: 2rem; color: var(--cor-titulo-secundario);">Novidades para desenvolvedores</h3>
-        <p>
-          Para quem desenvolve aplicativos, o Android 15 traz novas APIs para integração com IA e ferramentas que facilitam a adaptação às regras de privacidade. Isso deve acelerar o lançamento de apps mais inteligentes e seguros na Play Store.
-        </p>
-        <blockquote style="margin: 2rem 0; padding: 1.2rem 1.5rem; background: var(--cor-bg-citacao, #f7f7f7); border-left: 4px solid var(--cor-titulo-destaque); border-radius: 6px; color: var(--cor-texto-secundario);">
-          <strong>Destaque:</strong> Android 15 estará disponível mundialmente a partir do segundo semestre de 2025 para dispositivos compatíveis.
-        </blockquote>
-        <p>
-          Fique ligado no <strong>Blog Tech Explorer</strong> para mais detalhes, dicas e análises sobre todas as novidades do universo Android!
-        </p>
-      </section>
-      <a href="noticias.html" class="voltar-noticias" style="display: inline-block; margin-top: 2.5rem; color: var(--cor-nav-link); text-decoration: none; font-weight: 500; transition: color 0.3s;">
-        ← Voltar para notícias
-      </a>
-    </article>
-  </main>
-  <section class="newsletter">
-    <div class="newsletter-container">
-      <h2>Assine nossa Newsletter</h2>
-      <p>Receba as principais notícias e novidades sobre Android e tecnologia diretamente no seu e-mail.</p>
-      <form class="newsletter-form">
-        <input type="email" name="email" placeholder="Seu e-mail" required>
-        <button type="submit">Assinar</button>
-      </form>
-      <small>Você pode cancelar a inscrição a qualquer momento.</small>
-    </div>
-  </section>
-  <footer class="footer-news">
-  <div class="footer-container">
-    <div class="footer-main">
-      <div class="footer-section">
-        <h3>Tech Explorer</h3>
-        <p>Seu portal de notícias sobre tecnologia, inovação e tendências do universo Android.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Android 15: Nova era de IA e Privacidade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="/assets/imagens/favicon/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <a href="index.html"
+          ><img
+            class="logo"
+            src="/assets/imagens/logos/logo.png"
+            alt="Logo Tech Explorer"
+        /></a>
+        <form class="search-form">
+          <input type="text" class="search-input" placeholder="Buscar..." />
+          <button type="submit" class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <nav>
+          <a href="/">Início</a>
+          <a href="/pages/noticias.html">Notícias</a>
+          <a href="#">Categorias</a>
+          <a href="/pages/contato.html">Contato</a>
+        </nav>
       </div>
-      <div class="footer-section">
-        <h4>Links úteis</h4>
-        <ul>
-          <li><a href="/index.html">Início</a></li>
-          <li><a href="/pages/sobre.html">Sobre</a></li>
-          <li><a href="/pages/contato.html">Contato</a></li>
-          <li><a href="/pages/privacidade.html">Política de Privacidade</a></li>
-        </ul>
+    </header>
+    <main
+      class="conteudo-noticia"
+      style="
+        max-width: 900px;
+        margin: 2rem auto;
+        background: var(--cor-bg-card);
+        border-radius: 12px;
+        box-shadow: var(--cor-sombra-menu);
+        padding: 2rem;
+      "
+    >
+      <article>
+        <header>
+          <h1
+            style="
+              font-size: 2.3rem;
+              color: var(--cor-titulo-destaque);
+              margin: 0 0 0.5rem 0;
+            "
+          >
+            Android 15 inaugura nova era de inteligência artificial e
+            privacidade
+          </h1>
+          <h2
+            style="
+              font-size: 1.4rem;
+              color: var(--cor-texto-secundario);
+              margin: 0 0 1.5rem 0;
+              font-weight: 400;
+            "
+          >
+            Sistema aposta em IA generativa, automações contextuais e controles
+            avançados de segurança digital.
+          </h2>
+          <p
+            class="data-publicacao"
+            style="
+              color: var(--cor-nav-link);
+              font-size: 0.95rem;
+              margin-bottom: 0.2rem;
+            "
+          >
+            Publicado em 03/07/2025
+          </p>
+          <img
+            src="/assets/imagens/noticias/android-15-novos-recursos-privacidade-ia.png"
+            alt="Android 15: IA e Privacidade"
+            style="
+              width: 100%;
+              max-height: 400px;
+              object-fit: cover;
+              border-radius: 10px;
+              margin-bottom: 1.5rem;
+            "
+          />
+        </header>
+        <section style="line-height: 1.7; color: var(--cor-texto)">
+          <p>
+            O Google revelou oficialmente o <strong>Android 15</strong>,
+            trazendo uma série de recursos inovadores que prometem transformar a
+            experiência mobile. A nova versão aposta fortemente na integração de
+            inteligência artificial generativa, automações contextuais
+            personalizadas e melhorias substanciais nos controles de
+            privacidade.
+          </p>
+          <h3 style="margin-top: 2rem; color: var(--cor-titulo-secundario)">
+            IA generativa no centro da experiência do usuário
+          </h3>
+          <p>
+            O Android 15 torna a IA parte fundamental do sistema operacional. O
+            assistente do sistema está mais inteligente e proativo, capaz de
+            sugerir ações, automatizar tarefas e adaptar a interface conforme o
+            comportamento do usuário. Ferramentas como sugestões de texto,
+            respostas automáticas e recomendações de apps são geradas em tempo
+            real, elevando a produtividade e a personalização.
+          </p>
+          <h3 style="margin-top: 2rem; color: var(--cor-titulo-secundario)">
+            Privacidade elevada a outro nível
+          </h3>
+          <p>
+            Privacidade é um dos pilares do Android 15. A atualização oferece
+            controles mais granulares de permissões, notificações sobre acessos
+            sensíveis e painéis de transparência de dados. O usuário pode
+            monitorar, em tempo real, quais aplicativos acessam informações
+            pessoais, além de revogar permissões de forma ágil e intuitiva.
+          </p>
+          <h3 style="margin-top: 2rem; color: var(--cor-titulo-secundario)">
+            Novidades para desenvolvedores
+          </h3>
+          <p>
+            Para quem desenvolve aplicativos, o Android 15 traz novas APIs para
+            integração com IA e ferramentas que facilitam a adaptação às regras
+            de privacidade. Isso deve acelerar o lançamento de apps mais
+            inteligentes e seguros na Play Store.
+          </p>
+          <blockquote
+            style="
+              margin: 2rem 0;
+              padding: 1.2rem 1.5rem;
+              background: var(--cor-bg-citacao, #f7f7f7);
+              border-left: 4px solid var(--cor-titulo-destaque);
+              border-radius: 6px;
+              color: var(--cor-texto-secundario);
+            "
+          >
+            <strong>Destaque:</strong> Android 15 estará disponível mundialmente
+            a partir do segundo semestre de 2025 para dispositivos compatíveis.
+          </blockquote>
+          <p>
+            Fique ligado no <strong>Blog Tech Explorer</strong> para mais
+            detalhes, dicas e análises sobre todas as novidades do universo
+            Android!
+          </p>
+        </section>
+        <a
+          href="noticias.html"
+          class="voltar-noticias"
+          style="
+            display: inline-block;
+            margin-top: 2.5rem;
+            color: var(--cor-nav-link);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+          "
+        >
+          ← Voltar para notícias
+        </a>
+      </article>
+    </main>
+    <section class="newsletter">
+      <div class="newsletter-container">
+        <h2>Assine nossa Newsletter</h2>
+        <p>
+          Receba as principais notícias e novidades sobre Android e tecnologia
+          diretamente no seu e-mail.
+        </p>
+        <form class="newsletter-form">
+          <input type="email" name="email" placeholder="Seu e-mail" required />
+          <button type="submit">Assinar</button>
+        </form>
+        <small>Você pode cancelar a inscrição a qualquer momento.</small>
       </div>
-      <div class="footer-section">
-        <h4>Categorias</h4>
-        <ul>
-          <li><a href="#">Android</a></li>
-          <li><a href="#">Inteligência Artificial</a></li>
-          <li><a href="#">Desenvolvimento</a></li>
-          <li><a href="#">Tutoriais</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Siga-nos</h4>
-        <div class="footer-social">
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </section>
+    <footer class="footer-news">
+      <div class="footer-container">
+        <div class="footer-main">
+          <div class="footer-section">
+            <img
+              class="logo-footer"
+              src="/assets/imagens/logos/logo.png"
+              alt="Logo Tech Explorer"
+            />
+            <p>
+              Seu portal de notícias sobre tecnologia, inovação e tendências do
+              universo Android.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Links úteis</h4>
+            <ul>
+              <li>
+                <a href="/index.html">Início</a>
+              </li>
+              <li>
+                <a href="/pages/sobre.html">Sobre</a>
+              </li>
+              <li>
+                <a href="/pages/contato.html">Contato</a>
+              </li>
+              <li>
+                <a href="/pages/privacidade.html">Política de Privacidade</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Categorias</h4>
+            <ul>
+              <li><a href="#">Android</a></li>
+              <li><a href="#">Inteligência Artificial</a></li>
+              <li><a href="#">Desenvolvimento</a></li>
+              <li><a href="#">Tutoriais</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Siga-nos</h4>
+            <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Tech Explorer. Todos os direitos reservados.</p>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Tech Explorer. Todos os direitos reservados.</p>
-    </div>
-  </div>
-</footer>
-</body>
+    </footer>
+  </body>
 </html>
