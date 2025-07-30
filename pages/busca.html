@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/imagens/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Resultados da Busca - Tech Explorer</title>
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <a href="/index.html">
+          <img
+            class="logo"
+            src="/assets/imagens/logos/logo.png"
+            alt="Logo Tech Explorer"
+          />
+        </a>
+        <form class="search-form" id="search-form">
+          <input type="text" class="search-input" placeholder="Buscar..." />
+          <button type="submit" class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <nav>
+          <a href="/">Início</a>
+          <a href="/pages/noticias.html">Notícias</a>
+          <a href="#">Categorias</a>
+          <a href="/pages/contato.html">Contato</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="ultimas-noticias">
+        <h2>Resultados da Busca</h2>
+        <div class="row-noticias" id="resultados-busca">
+          <!-- Resultados serão inseridos aqui pelo JavaScript -->
+        </div>
+      </section>
+    </main>
+    <section class="newsletter">
+      <div class="newsletter-container">
+        <h2>Assine nossa Newsletter</h2>
+        <p>
+          Receba as principais notícias e novidades sobre Android e tecnologia
+          diretamente no seu e-mail.
+        </p>
+        <form class="newsletter-form">
+          <input type="email" name="email" placeholder="Seu e-mail" required />
+          <button type="submit">Assinar</button>
+        </form>
+        <small>Você pode cancelar a inscrição a qualquer momento.</small>
+      </div>
+    </section>
+    <footer class="footer-news">
+      <div class="footer-container">
+        <div class="footer-main">
+          <div class="footer-section">
+            <img
+              class="logo-footer"
+              src="/assets/imagens/logos/logo.png"
+              alt="Logo Tech Explorer"
+            />
+            <p>
+              Seu portal de notícias sobre tecnologia, inovação e tendências do
+              universo Android.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Links úteis</h4>
+            <ul>
+              <li><a href="/index.html">Início</a></li>
+              <li><a href="/pages/sobre.html">Sobre</a></li>
+              <li><a href="/pages/contato.html">Contato</a></li>
+              <li>
+                <a href="/pages/privacidade.html">Política de Privacidade</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Categorias</h4>
+            <ul>
+              <li><a href="#">Android</a></li>
+              <li><a href="#">Inteligência Artificial</a></li>
+              <li><a href="#">Desenvolvimento</a></li>
+              <li><a href="#">Tutoriais</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Siga-nos</h4>
+            <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Tech Explorer. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/filtro-busca.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const termo = localStorage.getItem('searchTerm') || '';
+        const resultadosContainer = document.getElementById('resultados-busca');
+
+        // Lista de notícias estática (baseada em noticias.html)
+        const noticias = [
+          {
+            imagem:
+              '/assets/imagens/noticias/android-15-novos-recursos-privacidade-ia.png',
+            alt: 'Android 14: Privacidade e IA em Foco',
+            titulo: 'Android 15 chega com novos recursos de privacidade e IA',
+            tempo: 'Há 7 horas',
+          },
+          {
+            imagem: '/assets/imagens/noticias/dan-droids-pq.png',
+            alt: 'mascote do android, origem do bugdroid',
+            titulo: 'Conheça a história do Bugdroid',
+            tempo: 'Há 8 horas',
+          },
+          {
+            imagem:
+              '/assets/imagens/noticias/Android-e-ia-parceria-para-o-futuro.png',
+            alt: 'Android e Inteligência Artificial',
+            titulo: 'Android e IA: parceria para o futuro',
+            tempo: 'Há 3 horas',
+          },
+          {
+            imagem:
+              '/assets/imagens/noticias/mudanças-na-interface-do-android.png',
+            alt: 'Mudanças na interface do Android',
+            titulo: 'Mudanças na interface do Android',
+            tempo: 'Há 10 horas',
+          },
+          {
+            imagem:
+              '/assets/imagens/noticias/ferramentas-para-devs-android.png',
+            alt: 'Ferramentas para devs Android',
+            titulo: 'Ferramentas para devs Android em 2025',
+            tempo: 'Há 9 horas',
+          },
+        ];
+
+        // Filtra e exibe as notícias
+        resultadosContainer.innerHTML = '';
+        noticias.forEach((noticia) => {
+          if (noticia.titulo.toLowerCase().includes(termo)) {
+            resultadosContainer.innerHTML += `
+            <article class="list-noticia">
+              <img src="${noticia.imagem}" alt="${noticia.alt}">
+              <div class="info-noticia">
+                <h3><a href="#">${noticia.titulo}</a></h3>
+                <p class="text-extended">${noticia.tempo}</p>
+              </div>
+            </article>
+          `;
+          }
+        });
+
+        // Limpa o termo de busca
+        localStorage.removeItem('searchTerm');
+      });
+    </script>
+  </body>
+  <script src="/js/filtro-busca.js"></script>
+</html>
