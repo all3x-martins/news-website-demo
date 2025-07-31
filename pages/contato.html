@@ -36,85 +36,44 @@
       </div>
     </header>
     <main>
-      <div
-        style="
-          max-width: 650px;
-          margin: 2rem auto;
-          background: var(--cor-bg-card);
-          border-radius: 12px;
-          box-shadow: var(--cor-sombra-menu);
-          padding: 2rem;
-        "
-      >
-        <h1 style="color: var(--cor-titulo-destaque); margin-bottom: 1rem">
-          Fale Conosco
-        </h1>
+      <div class="form-container">
+        <h1 class="titulo-principal">Fale Conosco</h1>
         <p>
           Tem dúvidas, sugestões ou quer anunciar no blog? Preencha o formulário
           abaixo ou envie um e-mail para
-          <a
-            href="mailto:contato@techexplorer.com"
-            style="color: var(--cor-nav-link); font-weight: 500"
+          <a href="mailto:contato@techexplorer.com" class="link-email"
             >contato@techexplorer.com</a
           >.
         </p>
-        <form style="margin-top: 2rem">
+        <form class="formulario">
           <label for="nome">Nome:</label><br />
           <input
             type="text"
             id="nome"
             name="nome"
             required
-            style="
-              width: 100%;
-              padding: 0.6rem;
-              border-radius: 6px;
-              border: 1px solid #ccc;
-              margin-bottom: 1rem;
-            "
+            class="input-padrao"
           />
+
           <label for="email">E-mail:</label><br />
           <input
             type="email"
             id="email"
             name="email"
             required
-            style="
-              width: 100%;
-              padding: 0.6rem;
-              border-radius: 6px;
-              border: 1px solid #ccc;
-              margin-bottom: 1rem;
-            "
+            class="input-padrao"
           />
+
           <label for="mensagem">Mensagem:</label><br />
           <textarea
             id="mensagem"
             name="mensagem"
             rows="5"
             required
-            style="
-              width: 100%;
-              padding: 0.6rem;
-              border-radius: 6px;
-              border: 1px solid #ccc;
-              margin-bottom: 1rem;
-            "
+            class="input-padrao"
           ></textarea>
-          <button
-            type="submit"
-            style="
-              background: var(--cor-nav-link);
-              color: #fff;
-              border: none;
-              padding: 0.8rem 2rem;
-              border-radius: 6px;
-              font-size: 1rem;
-              cursor: pointer;
-            "
-          >
-            Enviar
-          </button>
+
+          <button type="submit" class="botao-enviar">Enviar</button>
         </form>
       </div>
     </main>
