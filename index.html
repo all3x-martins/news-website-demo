@@ -35,12 +35,41 @@
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
-        <nav>
+        <nav class="main-nav"></nav>
           <a href="/">Início</a>
           <a href="/pages/noticias.html">Notícias</a>
-          <a href="#">Categorias</a>
+          <div class="dropdown" id="dropdown-categorias">
+            <a href="#" id="dropdown-toggle"
+              >Categorias <i class="fa fa-caret-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="#">Android</a>
+              <a href="#">Inteligência Artificial</a>
+              <a href="#">Desenvolvimento</a>
+              <a href="#">Tutoriais</a>
+            </div>
+          </div>
           <a href="/pages/contato.html">Contato</a>
         </nav>
+        <button class="hamburger" id="hamburger-btn" aria-label="Abrir menu">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="mobile-menu" id="mobile-menu">
+          <a href="/">Início</a>
+          <a href="/pages/noticias.html">Notícias</a>
+          <div class="dropdown-mobile">
+            <a href="#" id="dropdown-mobile-toggle"
+              >Categorias <i class="fa fa-caret-down"></i
+            ></a>
+            <div class="dropdown-mobile-content" id="dropdown-mobile-content">
+              <a href="#">Android</a>
+              <a href="#">Inteligência Artificial</a>
+              <a href="#">Desenvolvimento</a>
+              <a href="#">Tutoriais</a>
+            </div>
+          </div>
+          <a href="/pages/contato.html">Contato</a>
+        </div>
       </div>
     </header>
     <main>
@@ -200,6 +229,7 @@
         </div>
       </div>
     </footer>
+    <script src="/js/filtro-busca.js"></script>
+    <script src="/js/ui.js"></script>
   </body>
-  <script src="/js/filtro-busca.js"></script>
 </html>
