@@ -35,13 +35,13 @@
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
-        <nav class="main-nav"></nav>
+        <nav class="main-nav">
           <a href="/">Início</a>
           <a href="/pages/noticias.html">Notícias</a>
           <div class="dropdown" id="dropdown-categorias">
-            <a href="#" id="dropdown-toggle"
-              >Categorias <i class="fa fa-caret-down"></i
-            ></a>
+            <a href="#" id="dropdown-toggle">
+              Categorias <i class="fa fa-caret-down"></i>
+            </a>
             <div class="dropdown-content">
               <a href="#">Android</a>
               <a href="#">Inteligência Artificial</a>
@@ -160,17 +160,32 @@
         </div>
       </section>
     </main>
-    <section class="newsletter">
+    <section class="newsletter" aria-labelledby="newsletter-title">
       <div class="newsletter-container">
-        <h2>Assine nossa Newsletter</h2>
+        <h2 id="newsletter-title">Assine nossa Newsletter</h2>
         <p>
           Receba as principais notícias e novidades sobre Android e tecnologia
           diretamente no seu e-mail.
         </p>
-        <form class="newsletter-form">
-          <input type="email" name="email" placeholder="Seu e-mail" required />
+        <form class="newsletter-form" autocomplete="off">
+          <label for="newsletter-email" class="sr-only">E-mail</label>
+          <input
+            id="newsletter-email"
+            type="email"
+            name="email"
+            placeholder="Seu e-mail"
+            required
+            aria-required="true"
+            autocomplete="email"
+          />
           <button type="submit">Assinar</button>
         </form>
+        <div
+          id="newsletter-feedback"
+          role="alert"
+          aria-live="polite"
+          style="display: none"
+        ></div>
         <small>Você pode cancelar a inscrição a qualquer momento.</small>
       </div>
     </section>
