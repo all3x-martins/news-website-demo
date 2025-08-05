@@ -3,11 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="/assets/imagens/icons/favicon.ico"
-      type="image/x-icon"
-    />
     <title>Últimas notícias - Tech Explorer</title>
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/style.css" />
@@ -22,116 +17,260 @@
     />
   </head>
   <body>
-    <header>
-      <div class="menu">
-        <a href="/index.html"
-          ><img
-            class="logo"
-            src="/assets/imagens/logos/logo.png"
-            alt="Logo Tech Explorer"
-        /></a>
-        <form class="search-form" id="search-form">
-          <input type="text" class="search-input" placeholder="Buscar..." />
-          <button type="submit" class="search-button">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
-        <nav>
-          <a href="/">Início</a>
-          <a href="/pages/noticias.html">Notícias</a>
-          <div class="dropdown" id="dropdown-categorias">
-            <a href="#" id="dropdown-toggle"
-              >Categorias <i class="fa fa-caret-down"></i
-            ></a>
-            <div class="dropdown-content">
-              <a href="#">Android</a>
-              <a href="#">Inteligência Artificial</a>
-              <a href="#">Desenvolvimento</a>
-              <a href="#">Tutoriais</a>
-            </div>
+    <header class="menu">
+      <a href="/index.html" class="menu-logo">
+        <img src="/assets/imagens/logos/logo.png" alt="Logo Tech Explorer" />
+      </a>
+      <form class="search-form" id="search-form">
+        <input type="text" class="search-input" placeholder="Buscar..." />
+        <button type="submit" class="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <nav class="main-nav">
+        <a href="/">Início</a>
+        <a href="pages/noticias.html">Notícias</a>
+        <div class="dropdown" id="dropdown-categorias">
+          <a href="#" id="dropdown-toggle"
+            >Categorias <i class="fa fa-caret-down"></i
+          ></a>
+          <div class="dropdown-content">
+            <a href="#">Android</a>
+            <a href="#">Inteligência Artificial</a>
+            <a href="#">Desenvolvimento</a>
+            <a href="#">Tutoriais</a>
           </div>
-          <a href="/pages/contato.html">Contato</a>
-        </nav>
-      </div>
+        </div>
+        <a href="pages/contato.html">Contato</a>
+      </nav>
     </header>
-    <main>
+    <main class="main-content">
       <section class="ultimas-noticias">
-        <h2>Últimas Notícias</h2>
+        <div class="ultimas-noticias-header">
+          <i class="fa-solid fa-rss"></i>
+          <h2>Últimas Notícias</h2>
+        </div>
         <div class="row-noticias">
-          <article class="list-noticia">
-            <img
-              src="/assets/imagens/noticias/android-15-novos-recursos-privacidade-ia.png"
-              alt="Android 15 com novidades em privacidade e IA"
-            />
-            <div class="info-noticia">
-              <h3>
-                <a href="/pages/noticia-android15.html"
-                  >Android 15 aposta alto em IA e segurança</a
-                >
+          <article class="article-card">
+            <a href="pages/noticia-android15.html" class="article-card-link">
+              <img
+                class="article-card-image"
+                src="/assets/imagens/noticias/android-15-novos-recursos-privacidade-ia.png"
+                alt="Android 15 com novidades em privacidade e IA"
+              />
+              <h3 class="article-card-title">
+                Android 15 aposta alto em IA e segurança
               </h3>
-              <p class="text-extended">Há 7 horas</p>
-            </div>
+              <p class="article-card-meta">Há 7 horas</p>
+            </a>
           </article>
-          <article class="list-noticia">
-            <img
-              src="/assets/imagens/noticias/dan-droids-pq.png"
-              alt="Ilustração do mascote original do Android, o Dan Droids"
-            />
-            <div class="info-noticia">
-              <h3>
-                <a href="#">Bugdroid raiz: a origem do robozinho verde</a>
+
+          <article class="article-card">
+            <a href="pages/noticia-dan-droids.html" class="article-card-link">
+              <img
+                class="article-card-image"
+                src="/assets/imagens/noticias/dan-droids-pq.png"
+                alt="Ilustração do mascote original do Android, o Dan Droids"
+              />
+              <h3 class="article-card-title">
+                Bugdroid raiz: a origem do robozinho verde
               </h3>
-              <p class="text-extended">Há 8 horas</p>
-            </div>
+              <p class="article-card-meta">Há 8 horas</p>
+            </a>
           </article>
-          <article class="list-noticia">
-            <img
-              src="/assets/imagens/noticias/Android-e-ia-parceria-para-o-futuro.png"
-              alt="Android e IA juntos no futuro"
-            />
-            <div class="info-noticia">
-              <h3><a href="#">Android + IA = match perfeito?</a></h3>
-              <p class="text-extended">Há 3 horas</p>
-            </div>
+
+          <article class="article-card">
+            <a href="pages/noticia-android-e-ia.html" class="article-card-link">
+              <img
+                class="article-card-image"
+                src="/assets/imagens/noticias/Android-e-ia-parceria-para-o-futuro.png"
+                alt="Android e IA juntos no futuro"
+              />
+              <h3 class="article-card-title">Android + IA = match perfeito?</h3>
+              <p class="article-card-meta">Há 3 horas</p>
+            </a>
           </article>
-          <article class="list-noticia">
-            <img
-              src="/assets/imagens/noticias/mudanças-na-interface-do-android.png"
-              alt="Nova interface do Android 15"
-            />
-            <div class="info-noticia">
-              <h3>
-                <a href="#">Interface nova, vibe nova: o Android repaginado</a>
+
+          <article class="article-card">
+            <a
+              href="pages/android-interface-repaginada.html"
+              class="article-card-link"
+            >
+              <img
+                class="article-card-image"
+                src="/assets/imagens/noticias/mudanças-na-interface-do-android.png"
+                alt="Nova interface do Android 15"
+              />
+              <h3 class="article-card-title">
+                Interface nova, vibe nova: o Android repaginado
               </h3>
-              <p class="text-extended">Há 10 horas</p>
-            </div>
+              <p class="article-card-meta">Há 10 horas</p>
+            </a>
           </article>
-          <article class="list-noticia">
-            <img
-              src="/assets/imagens/noticias/ferramentas-para-devs-android.png"
-              alt="Ferramentas para desenvolvedores Android 2025"
-            />
-            <div class="info-noticia">
-              <h3>
-                <a href="#">Ferramentas para devs Android em 2025</a>
+
+          <article class="article-card">
+            <a
+              href="pages/noticia-ferramentas-devs-android.html"
+              class="article-card-link"
+            >
+              <img
+                class="article-card-image"
+                src="/assets/imagens/noticias/ferramentas-para-devs-android.png"
+                alt="Ferramentas para desenvolvedores Android 2025"
+              />
+              <h3 class="article-card-title">
+                Ferramentas para devs Android em 2025
               </h3>
-              <p class="text-extended">Há 9 horas</p>
-            </div>
+              <p class="article-card-meta">Há 9 horas</p>
+            </a>
+          </article>
+          <article class="article-card">
+            <a
+              href="/pages/novas-bibliotecas-android.html"
+              class="article-card-link"
+            >
+              <img
+                src="/assets/imagens/noticias/bibliotecas-android-essenciais.png"
+                alt="Novas bibliotecas Android otimizam performance"
+                class="article-card-image"
+              />
+              <h3 class="article-card-title">
+                Bibliotecas Android que você precisa conhecer
+              </h3>
+              <p class="article-card-meta">Há 2 horas</p>
+            </a>
+          </article>
+
+          <article class="article-card">
+            <a href="/pages/ux-mobile-2025.html" class="article-card-link">
+              <img
+                src="/assets/imagens/noticias/ux-mobile-2025.png"
+                alt="Tendências de UX para apps mobile em 2025"
+                class="article-card-image"
+              />
+              <h3 class="article-card-title">
+                UX mobile: tendências que dominarão 2025
+              </h3>
+              <p class="article-card-meta">Há 5 horas</p>
+            </a>
+          </article>
+
+          <article class="article-card">
+            <a
+              href="/pages/google-fuchsia-atualizacao.html"
+              class="article-card-link"
+            >
+              <img
+                src="/assets/imagens/noticias/google-fuchsia-os-atualizacao-2025.png"
+                alt="Google Fuchsia OS recebe atualização importante"
+                class="article-card-image"
+              />
+              <h3 class="article-card-title">
+                Google Fuchsia: o sistema que pode substituir o Android?
+              </h3>
+              <p class="article-card-meta">Há 1 dia</p>
+            </a>
+          </article>
+
+          <article class="article-card">
+            <a href="/pages/5g-expansao-brasil.html" class="article-card-link">
+              <img
+                src="/assets/imagens/noticias/5g-brasil-cidades-2025.png"
+                alt="5G no Brasil: cidades que recebem a tecnologia em 2025"
+                class="article-card-image"
+              />
+              <h3 class="article-card-title">
+                5G no Brasil: cidades que recebem a tecnologia em 2025
+              </h3>
+              <p class="article-card-meta">Há 3 horas</p>
+            </a>
+          </article>
+
+          <article class="article-card">
+            <a
+              href="/pages/produtividade-com-android.html"
+              class="article-card-link"
+            >
+              <img
+                src="/assets/imagens/noticias/tendencias-apps-mobile-2025.png"
+                alt="Dicas para melhorar a produtividade no Android"
+                class="article-card-image"
+              />
+              <h3 class="article-card-title">
+                Apps Android que otimizam sua produtividade
+              </h3>
+              <p class="article-card-meta">Há 30 minutos</p>
+            </a>
+          </article>
+          <article class="article-card">
+            <a
+              href="/pages/google-fuchsia-expansao.html"
+              class="article-card-link"
+            >
+              <img
+                src="/assets/imagens/noticias/google-fuchsia-iot.png"
+                alt="Google Fuchsia expandindo para dispositivos IoT"
+                class="article-card-image"
+              />
+              <div class="article-card-content">
+                <h3 class="article-card-title">
+                  Google Fuchsia chega aos dispositivos IoT
+                </h3>
+                <p class="article-card-meta">Há 5 horas</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="article-card">
+            <a
+              href="/pages/android-studio-dolphin.html"
+              class="article-card-link"
+            >
+              <img
+                src="/assets/imagens/noticias/android-studio-dolphin-lancamento.png"
+                alt="Android Studio Dolphin é lançado com novidades"
+                class="article-card-image"
+              />
+              <div class="article-card-content">
+                <h3 class="article-card-title">
+                  Android Studio Dolphin traz melhorias para devs
+                </h3>
+                <p class="article-card-meta">Há 6 horas</p>
+              </div>
+            </a>
           </article>
         </div>
       </section>
     </main>
-    <section class="newsletter">
+    <section class="newsletter" aria-labelledby="newsletter-title">
       <div class="newsletter-container">
-        <h2>Assine nossa Newsletter</h2>
-        <p>
+        <h2 id="newsletter-title" class="newsletter-container-title">
+          Assine nossa Newsletter
+        </h2>
+        <p class="newsletter-container-text">
           Receba as principais notícias e novidades sobre Android e tecnologia
           diretamente no seu e-mail.
         </p>
-        <form class="newsletter-form">
-          <input type="email" name="email" placeholder="Seu e-mail" required />
-          <button type="submit">Assinar</button>
+        <form class="newsletter-form" autocomplete="off">
+          <label for="newsletter-email" class="sr-only">E-mail</label>
+          <input
+            id="newsletter-email"
+            type="email"
+            name="email"
+            placeholder="Seu e-mail"
+            required
+            aria-required="true"
+            autocomplete="email"
+            class="newsletter-input"
+          />
+          <button type="submit" class="newsletter-button">Assinar</button>
         </form>
+        <div
+          id="newsletter-feedback"
+          role="alert"
+          aria-live="polite"
+          style="display: none"
+        ></div>
         <small>Você pode cancelar a inscrição a qualquer momento.</small>
       </div>
     </section>
@@ -150,18 +289,24 @@
             </p>
           </div>
           <div class="footer-section">
-            <h4>Links úteis</h4>
-            <ul>
-              <li><a href="/index.html">Início</a></li>
-              <li><a href="/pages/sobre.html">Sobre</a></li>
-              <li><a href="/pages/contato.html">Contato</a></li>
+            <h4 class="footer-section-title">Links úteis</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="/index.html">Início</a>
+              </li>
+              <li>
+                <a href="/pages/sobre.html">Sobre</a>
+              </li>
+              <li>
+                <a href="/pages/contato.html">Contato</a>
+              </li>
               <li>
                 <a href="/pages/privacidade.html">Política de Privacidade</a>
               </li>
             </ul>
           </div>
           <div class="footer-section">
-            <h4>Categorias</h4>
+            <h4 class="footer-section-title">Categorias</h4>
             <ul>
               <li><a href="#">Android</a></li>
               <li><a href="#">Inteligência Artificial</a></li>
@@ -170,7 +315,7 @@
             </ul>
           </div>
           <div class="footer-section">
-            <h4>Siga-nos</h4>
+            <h4 class="footer-section-title">Siga-nos</h4>
             <div class="footer-social">
               <a href="#"><i class="fa-brands fa-instagram"></i></a>
               <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -184,7 +329,7 @@
         </div>
       </div>
     </footer>
+    <script src="/js/filtro-busca.js"></script>
+    <script src="/js/ui.js"></script>
   </body>
-  <script src="/js/filtro-busca.js"></script>
-  <script src="/js/ui.js"></script>
 </html>

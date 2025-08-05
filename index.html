@@ -25,64 +25,80 @@
       <div class="menu">
         <a href="index.html"
           ><img
-            class="logo"
+            class="menu-logo"
             src="/assets/imagens/logos/logo.png"
             alt="Logo Tech Explorer"
         /></a>
         <form class="search-form" id="search-form">
           <input type="text" class="search-input" placeholder="Buscar..." />
-          <button type="submit" class="search-button">
+          <button type="submit" class="search-button" aria-label="Buscar">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
-        <nav class="main-nav">
-          <a href="/">Início</a>
-          <a href="/pages/noticias.html">Notícias</a>
+        <nav
+          role="navigation"
+          aria-label="Navegação principal"
+          class="main-nav"
+        >
+          <a href="/" class="main-nav-link">Início</a>
+          <a href="/pages/noticias.html" class="main-nav-link">Notícias</a>
           <div class="dropdown" id="dropdown-categorias">
-            <a href="#" id="dropdown-toggle">
+            <a href="#" id="dropdown-toggle" class="dropdown-toggle">
               Categorias <i class="fa fa-caret-down"></i>
             </a>
             <div class="dropdown-content">
-              <a href="#">Android</a>
-              <a href="#">Inteligência Artificial</a>
-              <a href="#">Desenvolvimento</a>
-              <a href="#">Tutoriais</a>
+              <a href="#" class="dropdown-content-link">Android</a>
+              <a href="#" class="dropdown-content-link"
+                >Inteligência Artificial</a
+              >
+              <a href="#" class="dropdown-content-link">Desenvolvimento</a>
+              <a href="#" class="dropdown-content-link">Tutoriais</a>
             </div>
           </div>
-          <a href="/pages/contato.html">Contato</a>
+          <a href="/pages/contato.html" class="main-nav-link">Contato</a>
         </nav>
         <button class="hamburger" id="hamburger-btn" aria-label="Abrir menu">
           <i class="fa fa-bars"></i>
         </button>
-        <div class="mobile-menu" id="mobile-menu">
-          <a href="/">Início</a>
-          <a href="/pages/noticias.html">Notícias</a>
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+          <a href="/" class="mobile-menu-link">Início</a>
+          <a href="/pages/noticias.html" class="mobile-menu-link">Notícias</a>
           <div class="dropdown-mobile">
-            <a href="#" id="dropdown-mobile-toggle"
+            <a
+              href="#"
+              id="dropdown-mobile-toggle"
+              class="dropdown-mobile-toggle"
               >Categorias <i class="fa fa-caret-down"></i
             ></a>
             <div class="dropdown-mobile-content" id="dropdown-mobile-content">
-              <a href="#">Android</a>
-              <a href="#">Inteligência Artificial</a>
-              <a href="#">Desenvolvimento</a>
-              <a href="#">Tutoriais</a>
+              <a href="#" class="dropdown-mobile-content-link">Android</a>
+              <a href="#" class="dropdown-mobile-content-link"
+                >Inteligência Artificial</a
+              >
+              <a href="#" class="dropdown-mobile-content-link"
+                >Desenvolvimento</a
+              >
+              <a href="#" class="dropdown-mobile-content-link">Tutoriais</a>
             </div>
           </div>
-          <a href="/pages/contato.html">Contato</a>
+          <a href="/pages/contato.html" class="mobile-menu-link">Contato</a>
         </div>
       </div>
     </header>
-    <main>
+    <main class="main-content">
       <section class="destaque">
-        <article>
-          <a href="/pages/noticia-android15.html">
+        <article class="destaque-article">
+          <a href="/pages/noticia-android15.html" class="destaque-link">
             <img
               src="assets/imagens/noticias/android-15-novos-recursos-privacidade-ia.png"
               alt="Android 15: Privacidade e IA em Foco"
+              class="destaque-img"
             />
-            <div>
-              <h1>Android 15 aposta alto em IA e segurança</h1>
-              <p>
+            <div class="destaque-content">
+              <h1 class="destaque-title">
+                Android 15 aposta alto em IA e segurança
+              </h1>
+              <p class="destaque-text">
                 A mais recente versão do sistema promete maior segurança,
                 integração com IA generativa e recursos inéditos para
                 desenvolvedores.
@@ -92,18 +108,21 @@
         </article>
       </section>
       <section class="ultimas-noticias">
-        <h2>Últimas Notícias</h2>
+        <h2 class="ultimas-noticias-title">Últimas Notícias</h2>
         <div class="grid-noticias">
           <article class="noticia">
             <img
               src="assets/imagens/noticias/dan-droids-pq.png"
               alt="mascote do android, origem do bugdroid"
+              class="noticia-img"
             />
             <div class="info-noticia">
-              <h3>
-                <a href="#">Bugdroid raiz: a origem do robozinho verde</a>
+              <h3 class="noticia-title">
+                <a href="/pages/bugdroid-raiz.html" class="noticia-link"
+                  >Bugdroid raiz: a origem do robozinho verde</a
+                >
               </h3>
-              <p>
+              <p class="noticia-text">
                 O mascote do Android, apelidado de Bugdroid, surgiu com um
                 propósito curioso e uma origem que surpreende até os fãs da
                 tecnologia.
@@ -113,11 +132,16 @@
           <article class="noticia">
             <img
               src="assets/imagens/noticias/Android-e-ia-parceria-para-o-futuro.png"
-              alt="Android e Inteligência Artificial"
+              alt="Android + IA = match perfeito?"
+              class="noticia-img"
             />
             <div class="info-noticia">
-              <h3><a href="#">Android + IA = match perfeito?</a></h3>
-              <p>
+              <h3 class="noticia-title">
+                <a href="/pages/android+ia.html" class="noticia-link"
+                  >Android + IA = match perfeito?</a
+                >
+              </h3>
+              <p class="noticia-text">
                 Descubra como o Android está se reinventando com inteligência
                 artificial para oferecer experiências mais personalizadas.
               </p>
@@ -126,18 +150,23 @@
         </div>
       </section>
       <section class="categoria">
-        <h2>Dicas para Devs Android</h2>
+        <h2 class="categoria-title">Dicas para Devs Android</h2>
         <div class="grid-noticias">
           <article class="noticia">
             <img
               src="assets/imagens/noticias/mudanças-na-interface-do-android.png"
               alt="Mudanças na interface do Android"
+              class="noticia-img"
             />
             <div class="info-noticia">
-              <h3>
-                <a href="#">Interface nova, vibe nova: o Android repaginado</a>
+              <h3 class="noticia-title">
+                <a
+                  href="/pages/android-interface-repaginada.html"
+                  class="noticia-link"
+                  >Interface nova, vibe nova: o Android repaginado</a
+                >
               </h3>
-              <p>
+              <p class="noticia-text">
                 O novo visual foca em acessibilidade e agilidade. Veja como ele
                 impacta a experiência de uso.
               </p>
@@ -148,10 +177,17 @@
             <img
               src="assets/imagens/noticias/ferramentas-para-devs-android.png"
               alt="Ferramentas para devs Android"
+              class="noticia-img"
             />
             <div class="info-noticia">
-              <h3><a href="#">Ferramentas para devs Android em 2025</a></h3>
-              <p>
+              <h3 class="noticia-title">
+                <a
+                  href="pages/ferramentas-devs-android-2025.html"
+                  class="noticia-link"
+                  >Ferramentas para devs Android em 2025</a
+                >
+              </h3>
+              <p class="noticia-text">
                 As novas APIs trazem facilidades que vão acelerar o
                 desenvolvimento de apps nativos.
               </p>
@@ -162,8 +198,10 @@
     </main>
     <section class="newsletter" aria-labelledby="newsletter-title">
       <div class="newsletter-container">
-        <h2 id="newsletter-title">Assine nossa Newsletter</h2>
-        <p>
+        <h2 id="newsletter-title" class="newsletter-container-title">
+          Assine nossa Newsletter
+        </h2>
+        <p class="newsletter-container-text">
           Receba as principais notícias e novidades sobre Android e tecnologia
           diretamente no seu e-mail.
         </p>
@@ -177,8 +215,9 @@
             required
             aria-required="true"
             autocomplete="email"
+            class="newsletter-input"
           />
-          <button type="submit">Assinar</button>
+          <button type="submit" class="newsletter-button">Assinar</button>
         </form>
         <div
           id="newsletter-feedback"
@@ -204,8 +243,8 @@
             </p>
           </div>
           <div class="footer-section">
-            <h4>Links úteis</h4>
-            <ul>
+            <h4 class="footer-section-title">Links úteis</h4>
+            <ul class="footer-links">
               <li>
                 <a href="/index.html">Início</a>
               </li>
@@ -221,7 +260,7 @@
             </ul>
           </div>
           <div class="footer-section">
-            <h4>Categorias</h4>
+            <h4 class="footer-section-title">Categorias</h4>
             <ul>
               <li><a href="#">Android</a></li>
               <li><a href="#">Inteligência Artificial</a></li>
@@ -230,7 +269,7 @@
             </ul>
           </div>
           <div class="footer-section">
-            <h4>Siga-nos</h4>
+            <h4 class="footer-section-title">Siga-nos</h4>
             <div class="footer-social">
               <a href="#"><i class="fa-brands fa-instagram"></i></a>
               <a href="#"><i class="fa-brands fa-x-twitter"></i></a>

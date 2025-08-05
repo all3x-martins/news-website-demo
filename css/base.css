@@ -1,3 +1,6 @@
+/* ===================================
+   Palette: Color Variables
+=================================== */
 :root {
   --color-surface-dark: #1a252c;
   --cor-bg-principal: #f4f4f4;
@@ -12,8 +15,8 @@
   --cor-link: #07f;
   --cor-link-hover: #005bb5;
   --cor-borda: #ececec;
-  --cor-sombra-menu: 0 2px 4px rgb(0 0 0 / 10%);
-  --cor-sombra-card: 0 2px 8px rgb(0 0 0 7%);
+  --shadow-card-default: 0 2px 4px rgb(0 0 0 / 10%);
+  --cor-sombra-card: 0 2px 8px rgb(0 0 0 / 7%);
   --cor-sombra-noticia: 0 1px 4px rgb(30 30 60 / 6%);
   --cor-sombra-noticia-hover: 0 6px 20px rgb(0 0 0 / 10%);
   --cor-sombra-leia-mais: 0 2px 6px rgb(0 119 255 / 7%);
@@ -25,34 +28,23 @@
   --cor-input-borda: #ccc;
 }
 
+/* ===================================
+   Global Reset & Box Model
+=================================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ===================================
+   Typography Base Styles
+=================================== */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--cor-texto);
-  background: var(--cor-bg-principal);
+  color: var(--cor-texto, #222);
+  background: var(--cor-bg-principal, #f4f4f4);
   line-height: 1.7;
-}
-
-a {
-  color: var(--cor-link);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-a:hover,
-a:focus {
-  color: var(--cor-link-hover);
-  outline: none;
-}
-
-img {
-  max-width: 100%;
-  display: block;
 }
 
 h1,
@@ -62,12 +54,91 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  color: var(--cor-titulo);
+  color: var(--cor-titulo, #1d3557);
 }
 
+/* ===================================
+   Links & Interactions
+=================================== */
+a {
+  color: var(--cor-link, #07f);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover,
+a:focus {
+  color: var(--cor-link-hover, #005bb5);
+}
+
+a:focus {
+  outline: 2px solid var(--cor-link, #07f);
+  outline-offset: 2px;
+}
+
+/* ===================================
+   Media & Images
+=================================== */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===================================
+   Layout: Container & Grids
+=================================== */
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+/* ===================================
+   Utility Classes (Essenciais)
+=================================== */
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* ===================================
+   Accessibility Helpers
+=================================== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

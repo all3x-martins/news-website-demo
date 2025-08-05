@@ -13,37 +13,32 @@
     />
   </head>
   <body>
-    <header>
-      <div class="menu">
-        <a href="/index.html"
-          ><img
-            class="logo"
-            src="/assets/imagens/logos/logo.png"
-            alt="Logo Tech Explorer"
-        /></a>
-        <form class="search-form" id="search-form">
-          <input type="text" class="search-input" placeholder="Buscar..." />
-          <button type="submit" class="search-button">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
-        <nav>
-          <a href="/">Início</a>
-          <a href="/pages/noticias.html">Notícias</a>
-          <div class="dropdown" id="dropdown-categorias">
-            <a href="#" id="dropdown-toggle"
-              >Categorias <i class="fa fa-caret-down"></i
-            ></a>
-            <div class="dropdown-content">
-              <a href="#">Android</a>
-              <a href="#">Inteligência Artificial</a>
-              <a href="#">Desenvolvimento</a>
-              <a href="#">Tutoriais</a>
-            </div>
+    <header class="menu">
+      <a href="/index.html" class="menu-logo">
+        <img src="/assets/imagens/logos/logo.png" alt="Logo Tech Explorer" />
+      </a>
+      <form class="search-form" id="search-form">
+        <input type="text" class="search-input" placeholder="Buscar..." />
+        <button type="submit" class="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <nav class="main-nav">
+        <a href="/">Início</a>
+        <a href="pages/noticias.html">Notícias</a>
+        <div class="dropdown" id="dropdown-categorias">
+          <a href="#" id="dropdown-toggle"
+            >Categorias <i class="fa fa-caret-down"></i
+          ></a>
+          <div class="dropdown-content">
+            <a href="#">Android</a>
+            <a href="#">Inteligência Artificial</a>
+            <a href="#">Desenvolvimento</a>
+            <a href="#">Tutoriais</a>
           </div>
-          <a href="/pages/contato.html">Contato</a>
-        </nav>
-      </div>
+        </div>
+        <a href="pages/contato.html">Contato</a>
+      </nav>
     </header>
     <main>
       <div class="form-container">
@@ -102,8 +97,8 @@
             </p>
           </div>
           <div class="footer-section">
-            <h4>Links úteis</h4>
-            <ul>
+            <h4 class="footer-section-title">Links úteis</h4>
+            <ul class="footer-links">
               <li>
                 <a href="/index.html">Início</a>
               </li>
@@ -119,7 +114,7 @@
             </ul>
           </div>
           <div class="footer-section">
-            <h4>Categorias</h4>
+            <h4 class="footer-section-title">Categorias</h4>
             <ul>
               <li><a href="#">Android</a></li>
               <li><a href="#">Inteligência Artificial</a></li>
@@ -128,7 +123,7 @@
             </ul>
           </div>
           <div class="footer-section">
-            <h4>Siga-nos</h4>
+            <h4 class="footer-section-title">Siga-nos</h4>
             <div class="footer-social">
               <a href="#"><i class="fa-brands fa-instagram"></i></a>
               <a href="#"><i class="fa-brands fa-x-twitter"></i></a>

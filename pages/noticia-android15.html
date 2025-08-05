@@ -13,115 +13,152 @@
     />
   </head>
   <body>
-    <header>
-      <div class="menu">
-        <a href="index.html"
-          ><img
-            class="logo"
-            src="/assets/imagens/logos/logo.png"
-            alt="Logo Tech Explorer"
-        /></a>
-        <form class="search-form" id="search-form">
-          <input type="text" class="search-input" placeholder="Buscar..." />
-          <button type="submit" class="search-button">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
-        <nav>
-          <a href="/">Início</a>
-          <a href="/pages/noticias.html">Notícias</a>
-          <div class="dropdown" id="dropdown-categorias">
-            <a href="#" id="dropdown-toggle"
-              >Categorias <i class="fa fa-caret-down"></i
-            ></a>
-            <div class="dropdown-content">
-              <a href="#">Android</a>
-              <a href="#">Inteligência Artificial</a>
-              <a href="#">Desenvolvimento</a>
-              <a href="#">Tutoriais</a>
-            </div>
+    <header class="menu">
+      <a href="/index.html" class="menu-logo">
+        <img src="/assets/imagens/logos/logo.png" alt="Logo Tech Explorer" />
+      </a>
+      <form class="search-form" id="search-form">
+        <input type="text" class="search-input" placeholder="Buscar..." />
+        <button type="submit" class="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <nav class="main-nav">
+        <a href="/">Início</a>
+        <a href="pages/noticias.html">Notícias</a>
+        <div class="dropdown" id="dropdown-categorias">
+          <a href="#" id="dropdown-toggle"
+            >Categorias <i class="fa fa-caret-down"></i
+          ></a>
+          <div class="dropdown-content">
+            <a href="#">Android</a>
+            <a href="#">Inteligência Artificial</a>
+            <a href="#">Desenvolvimento</a>
+            <a href="#">Tutoriais</a>
           </div>
-          <a href="/pages/contato.html">Contato</a>
-        </nav>
-      </div>
+        </div>
+        <a href="pages/contato.html">Contato</a>
+      </nav>
     </header>
     <main class="conteudo-noticia">
-      <article>
-        <header>
-          <h1>
-            Android 15 inaugura nova era de inteligência artificial e
-            privacidade
-          </h1>
-          <h2>
-            Sistema aposta em IA generativa, automações contextuais e controles
-            avançados de segurança digital.
-          </h2>
-          <p class="data-publicacao">Publicado em 03/07/2025</p>
-          <img
-            src="/assets/imagens/noticias/android-15-novos-recursos-privacidade-ia.png"
-            alt="Android 15: IA e Privacidade"
-            class="capa-noticia"
-          />
-        </header>
-        <section>
-          <p>
-            O Google revelou oficialmente o <strong>Android 15</strong>,
-            trazendo uma série de recursos inovadores que prometem transformar a
-            experiência mobile. A nova versão aposta fortemente na integração de
-            inteligência artificial generativa, automações contextuais
-            personalizadas e melhorias substanciais nos controles de
-            privacidade.
-          </p>
-          <h3>IA generativa no centro da experiência do usuário</h3>
-          <p>
-            O Android 15 torna a IA parte fundamental do sistema operacional. O
-            assistente do sistema está mais inteligente e proativo, capaz de
-            sugerir ações, automatizar tarefas e adaptar a interface conforme o
-            comportamento do usuário. Ferramentas como sugestões de texto,
-            respostas automáticas e recomendações de apps são geradas em tempo
-            real, elevando a produtividade e a personalização.
-          </p>
-          <h3>Privacidade elevada a outro nível</h3>
-          <p>
-            Privacidade é um dos pilares do Android 15. A atualização oferece
-            controles mais granulares de permissões, notificações sobre acessos
-            sensíveis e painéis de transparência de dados. O usuário pode
-            monitorar, em tempo real, quais aplicativos acessam informações
-            pessoais, além de revogar permissões de forma ágil e intuitiva.
-          </p>
-          <h3>Novidades para desenvolvedores</h3>
-          <p>
-            Para quem desenvolve aplicativos, o Android 15 traz novas APIs para
-            integração com IA e ferramentas que facilitam a adaptação às regras
-            de privacidade. Isso deve acelerar o lançamento de apps mais
-            inteligentes e seguros na Play Store.
-          </p>
-          <blockquote class="citacao-destaque">
-            <strong>Destaque:</strong> Android 15 estará disponível mundialmente
-            a partir do segundo semestre de 2025 para dispositivos compatíveis.
-          </blockquote>
-          <p>
-            Fique ligado no <strong>Blog Tech Explorer</strong> para mais
-            detalhes, dicas e análises sobre todas as novidades do universo
-            Android!
-          </p>
-        </section>
-        <a href="noticias.html" class="voltar-noticias">
-          ← Voltar para notícias
-        </a>
-      </article>
-    </main>
-    <section class="newsletter">
-      <div class="newsletter-container">
-        <h2>Assine nossa Newsletter</h2>
+      <a
+        href="noticias.html"
+        class="voltar-noticias"
+        aria-label="Voltar para a listagem de notícias"
+      >
+        ← Voltar para notícias
+      </a>
+
+      <header>
+        <h1>
+          Android 15 inaugura nova era de inteligência artificial e privacidade
+        </h1>
+        <h2>
+          Google revela recursos que transformam a experiência do usuário com
+          foco em segurança e automação inteligente.
+        </h2>
+        <time class="data-publicacao" datetime="2025-07-03"
+          >Publicado em 03/07/2025</time
+        >
+        <img
+          src="/assets/imagens/noticias/android-15-novos-recursos-privacidade-ia.png"
+          alt="Android 15: IA e Privacidade"
+          class="capa-noticia"
+          loading="lazy"
+        />
+      </header>
+
+      <section>
         <p>
+          O Google apresentou oficialmente o Android 15, trazendo avanços
+          significativos em inteligência artificial e novos mecanismos de
+          proteção de dados. As inovações prometem transformar a forma como os
+          usuários interagem com seus dispositivos.
+        </p>
+
+        <blockquote class="citacao-destaque">
+          "A privacidade não é mais um recurso opcional, mas um pilar central da
+          experiência Android."
+        </blockquote>
+
+        <h3>Recursos de IA Personalizada</h3>
+        <p>
+          Entre as novidades, destacam-se assistentes contextuais mais
+          inteligentes e integrações com dispositivos IoT, oferecendo automações
+          adaptativas ao perfil do usuário.
+        </p>
+
+        <h3>Segurança Reforçada</h3>
+        <p>
+          O Android 15 adota novas camadas de criptografia e controles de
+          permissão dinâmicos, garantindo mais transparência e proteção contra
+          acessos não autorizados.
+        </p>
+
+        <blockquote class="citacao-destaque">
+          "Estamos redefinindo a relação entre o usuário e a tecnologia, com um
+          ecossistema onde a IA atua como guardiã da privacidade."
+        </blockquote>
+
+        <h3>Integração com Dispositivos IoT</h3>
+        <p>
+          O Android 15 trará integração nativa com dispositivos inteligentes,
+          permitindo que smartphones gerenciem rotinas domésticas com mais
+          eficiência e segurança. Essa conexão facilitará a automação de tarefas
+          cotidianas, como controle de iluminação e sistemas de segurança.
+        </p>
+
+        <h3>Interface Renovada</h3>
+        <p>
+          Além das melhorias técnicas, o Android 15 apresenta uma interface mais
+          limpa e intuitiva, com novos elementos visuais focados em
+          acessibilidade. O design foi otimizado para proporcionar uma
+          experiência mais fluida, especialmente em dispositivos com telas
+          dobráveis.
+        </p>
+
+        <h3>Conclusão</h3>
+        <p>
+          Com essa atualização, o Google posiciona o Android 15 como uma
+          plataforma de referência em inovação, unindo inteligência artificial e
+          privacidade de forma estratégica. A expectativa é que os dispositivos
+          compatíveis comecem a receber a atualização no último trimestre de
+          2025.
+        </p>
+      </section>
+    </main>
+    <section
+      class="newsletter newsletter-section"
+      aria-labelledby="newsletter-title"
+    >
+      <div class="newsletter-container">
+        <h2 id="newsletter-title" class="newsletter-container-title">
+          Assine nossa Newsletter
+        </h2>
+        <p class="newsletter-container-text">
           Receba as principais notícias e novidades sobre Android e tecnologia
           diretamente no seu e-mail.
         </p>
-        <form class="newsletter-form">
-          <input type="email" name="email" placeholder="Seu e-mail" required />
-          <button type="submit">Assinar</button>
+        <form class="newsletter-form" autocomplete="off">
+          <label for="newsletter-email" class="sr-only">E-mail</label>
+          <input
+            id="newsletter-email"
+            type="email"
+            name="email"
+            placeholder="Seu e-mail"
+            required
+            aria-required="true"
+            autocomplete="email"
+            class="newsletter-input"
+          />
+          <button type="submit" class="newsletter-button">Assinar</button>
         </form>
+        <div
+          id="newsletter-feedback"
+          role="alert"
+          aria-live="polite"
+          style="display: none"
+        ></div>
         <small>Você pode cancelar a inscrição a qualquer momento.</small>
       </div>
     </section>
@@ -140,8 +177,8 @@
             </p>
           </div>
           <div class="footer-section">
-            <h4>Links úteis</h4>
-            <ul>
+            <h4 class="footer-section-title">Links úteis</h4>
+            <ul class="footer-links">
               <li>
                 <a href="/index.html">Início</a>
               </li>
@@ -157,7 +194,7 @@
             </ul>
           </div>
           <div class="footer-section">
-            <h4>Categorias</h4>
+            <h4 class="footer-section-title">Categorias</h4>
             <ul>
               <li><a href="#">Android</a></li>
               <li><a href="#">Inteligência Artificial</a></li>
@@ -166,7 +203,7 @@
             </ul>
           </div>
           <div class="footer-section">
-            <h4>Siga-nos</h4>
+            <h4 class="footer-section-title">Siga-nos</h4>
             <div class="footer-social">
               <a href="#"><i class="fa-brands fa-instagram"></i></a>
               <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
