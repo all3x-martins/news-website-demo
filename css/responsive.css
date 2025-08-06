@@ -1,0 +1,132 @@
+/* Media Queries */
+
+/* <= 480px */
+@media (width <= 480px) {
+  .conteudo-noticia {
+    padding: 1rem;
+  }
+
+  .conteudo-noticia-title {
+    font-size: 1.6rem;
+  }
+
+  .conteudo-noticia-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* <= 600px */
+@media (width <= 600px) {
+  .ultimas-noticias,
+  .categoria {
+    padding: 0.7rem 0.2rem;
+  }
+
+  .noticia-img {
+    height: 110px;
+  }
+
+  .noticia-title {
+    font-size: 1rem;
+  }
+
+  .newsletter {
+    padding: 1.2rem 0.5rem;
+    border-radius: 8px;
+  }
+
+  .newsletter-container-title {
+    font-size: 1.25rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+  }
+
+  .newsletter-input,
+  .newsletter-button {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+}
+
+/* <= 768px */
+@media (width <= 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #222;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    min-width: 180px;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+    border-radius: 8px;
+    z-index: 1000;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
+
+  .dropdown-mobile-content {
+    display: none;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+
+  .dropdown-mobile-content.show {
+    display: flex;
+  }
+
+  .dropdown-mobile > a {
+    cursor: pointer;
+  }
+
+  .conteudo-noticia {
+    padding: 1.5rem;
+  }
+
+  .conteudo-noticia-title {
+    font-size: 1.9rem;
+  }
+
+  .conteudo-noticia-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .capa-noticia {
+    max-height: 250px;
+  }
+}
+
+/* <= 900px */
+@media (width <= 900px) {
+  .grid-noticias {
+    grid-template-columns: 1fr;
+  }
+
+  .ultimas-noticias,
+  .categoria {
+    padding: 1.2rem 0.5rem;
+  }
+}
