@@ -15,32 +15,65 @@
     />
   </head>
   <body>
-    <header class="menu">
-      <a href="/index.html" class="menu-logo">
-        <img src="/assets/imagens/logos/logo.png" alt="Logo Tech Explorer" />
-      </a>
-      <form class="search-form" id="search-form">
-        <input type="text" class="search-input" placeholder="Buscar..." />
-        <button type="submit" class="search-button">
+    <header>
+      <div class="menu">
+        <div class="menu-container">
+          <button class="hamburger" id="hamburger-btn" aria-label="Abrir menu">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Android</a></li>
+            <li><a href="#">Inteligência Artificial</a></li>
+            <li><a href="#">Desenvolvimento</a></li>
+            <li><a href="#">Tutoriais</a></li>
+            <li><a href="#">Software</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+          <a href="index.html"
+            ><img
+              class="menu-logo"
+              src="/assets/imagens/logos/logo.png"
+              alt="Logo Tech Explorer"
+          /></a>
+        </div>
+        <form class="search-form" id="search-form">
+          <input type="text" class="search-input" placeholder="Buscar..." />
+          <button type="submit" class="search-button" aria-label="Buscar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <nav
+          role="navigation"
+          aria-label="Navegação principal"
+          class="main-nav"
+        >
+          <a href="/" class="main-nav-link">Início</a>
+          <a href="/pages/noticias.html" class="main-nav-link">Notícias</a>
+          <div class="dropdown" id="dropdown-categorias">
+            <span id="dropdown-toggle" class="dropdown-toggle"
+              >Categorias <i class="fa fa-caret-down"></i
+            ></span>
+            <ul class="dropdown-content">
+              <li><a href="#" class="dropdown-content-link">Android</a></li>
+              <li>
+                <a href="#" class="dropdown-content-link"
+                  >Inteligência Artificial</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-content-link">Desenvolvimento</a>
+              </li>
+              <li><a href="#" class="dropdown-content-link">Tutoriais</a></li>
+            </ul>
+          </div>
+          <a href="/pages/contato.html" class="main-nav-link">Contato</a>
+        </nav>
+        <button class="search-toggle-mobile">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
-      </form>
-      <nav class="main-nav">
-        <a href="/">Início</a>
-        <a href="pages/noticias.html">Notícias</a>
-        <div class="dropdown" id="dropdown-categorias">
-          <a href="#" id="dropdown-toggle"
-            >Categorias <i class="fa fa-caret-down"></i
-          ></a>
-          <div class="dropdown-content">
-            <a href="#">Android</a>
-            <a href="#">Inteligência Artificial</a>
-            <a href="#">Desenvolvimento</a>
-            <a href="#">Tutoriais</a>
-          </div>
-        </div>
-        <a href="pages/contato.html">Contato</a>
-      </nav>
+      </div>
     </header>
     <main class="conteudo-noticia">
       <a
