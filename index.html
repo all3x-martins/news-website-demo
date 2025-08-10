@@ -25,25 +25,40 @@
   </head>
   <body>
     <header>
-      <div class="menu">
+      <div class="menu d-flex">
         <div class="menu-container">
           <button class="hamburger" id="hamburger-btn" aria-label="Abrir menu">
             <i class="fa fa-bars"></i>
           </button>
           <ul class="mobile-menu" id="mobile-menu" aria-hidden="true">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Notícias</a></li>
+            <img
+              class="menu-logo"
+              src="/assets/imagens/logo/logo.png"
+              alt="Logo Tech Explorer"
+            />
+            <form class="search-form-menu" id="search-form-menu">
+              <input type="text" class="search-input" placeholder="Buscar..." />
+              <button
+                type="submit"
+                class="search-button-menu"
+                aria-label="Buscar"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="/pages/noticias.html">Notícias</a></li>
             <li><a href="#">Android</a></li>
             <li><a href="#">Inteligência Artificial</a></li>
             <li><a href="#">Desenvolvimento</a></li>
             <li><a href="#">Tutoriais</a></li>
             <li><a href="#">Software</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="/pages/contato.html">Contato</a></li>
           </ul>
           <a href="index.html"
             ><img
               class="menu-logo"
-              src="/assets/imagens/logos/logo.png"
+              src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
           /></a>
         </div>
@@ -56,12 +71,12 @@
         <nav
           role="navigation"
           aria-label="Navegação principal"
-          class="main-nav"
+          class="main-nav d-flex"
         >
           <a href="/" class="main-nav-link">Início</a>
           <a href="/pages/noticias.html" class="main-nav-link">Notícias</a>
           <div class="dropdown" id="dropdown-categorias">
-            <span id="dropdown-toggle" class="dropdown-toggle"
+            <span id="dropdown-toggle" class="dropdown-toggle d-flex"
               >Categorias <i class="fa fa-caret-down"></i
             ></span>
             <ul class="dropdown-content">
@@ -85,7 +100,7 @@
       </div>
     </header>
     <main class="main-content">
-      <section class="destaque">
+      <section class="destaque d-flex">
         <article class="destaque-article">
           <a href="/pages/noticia-android15.html" class="destaque-link">
             <img
@@ -109,7 +124,7 @@
       <section class="ultimas-noticias">
         <h2 class="ultimas-noticias-title">Últimas Notícias</h2>
         <div class="grid-noticias">
-          <article class="noticia">
+          <article class="noticia d-flex">
             <a href="/pages/bugdroid-raiz.html" class="noticia-link">
               <img
                 src="assets/imagens/noticias/dan-droids-pq.png"
@@ -128,8 +143,8 @@
               </div>
             </a>
           </article>
-          <article class="noticia">
-            <a href="/pages/android+ia.html" class="noticia-link">
+          <article class="noticia d-flex">
+            <a href="/pages/android-ia.html" class="noticia-link">
               <img
                 src="assets/imagens/noticias/Android-e-ia-parceria-para-o-futuro.png"
                 alt="Android + IA = match perfeito?"
@@ -149,7 +164,7 @@
       <section class="categoria">
         <h2 class="categoria-title">Dicas para Devs Android</h2>
         <div class="grid-noticias">
-          <article class="noticia">
+          <article class="noticia d-flex">
             <a
               href="/pages/android-interface-repaginada.html"
               class="noticia-link"
@@ -171,7 +186,7 @@
             </a>
           </article>
 
-          <article class="noticia">
+          <article class="noticia d-flex">
             <a
               href="pages/ferramentas-devs-android-2025.html"
               class="noticia-link"
@@ -204,7 +219,7 @@
           Receba as principais notícias e novidades sobre Android e tecnologia
           diretamente no seu e-mail.
         </p>
-        <form class="newsletter-form" autocomplete="off">
+        <form class="newsletter-form d-flex justify-center" autocomplete="off">
           <label for="newsletter-email" class="sr-only">E-mail</label>
           <input
             id="newsletter-email"
@@ -229,11 +244,11 @@
     </section>
     <footer class="footer-news">
       <div class="footer-container">
-        <div class="footer-main">
+        <div class="footer-main d-flex">
           <div class="footer-section">
             <img
               class="logo-footer"
-              src="/assets/imagens/logos/logo.png"
+              src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
             />
             <p>
@@ -245,7 +260,7 @@
             <h4 class="footer-section-title">Links úteis</h4>
             <ul class="footer-links">
               <li>
-                <a href="/index.html">Início</a>
+                <a href="index.html">Início</a>
               </li>
               <li>
                 <a href="/pages/sobre.html">Sobre</a>

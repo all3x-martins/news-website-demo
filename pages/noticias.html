@@ -3,9 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fique por dentro das últimas notícias sobre Android, Inteligência Artificial, Desenvolvimento e Tutoriais no Tech Explorer."
+    />
+    <meta
+      name="keywords"
+      content="notícias, tecnologia, Android, Inteligência Artificial, Desenvolvimento, Tutoriais"
+    />
+    <meta name="author" content="Tech Explorer" />
     <title>Últimas notícias - Tech Explorer</title>
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
     <link
       rel="shortcut icon"
       href="/assets/imagens/favicon/favicon.ico"
@@ -18,25 +28,40 @@
   </head>
   <body>
     <header>
-      <div class="menu">
+      <div class="menu d-flex">
         <div class="menu-container">
           <button class="hamburger" id="hamburger-btn" aria-label="Abrir menu">
             <i class="fa fa-bars"></i>
           </button>
           <ul class="mobile-menu" id="mobile-menu" aria-hidden="true">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Notícias</a></li>
+            <img
+              class="menu-logo"
+              src="/assets/imagens/logo/logo.png"
+              alt="Logo Tech Explorer"
+            />
+            <form class="search-form-menu" id="search-form-menu">
+              <input type="text" class="search-input" placeholder="Buscar..." />
+              <button
+                type="submit"
+                class="search-button-menu"
+                aria-label="Buscar"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+            <li><a href="/index.html">Início</a></li>
+            <li><a href="/pages/noticias.html">Notícias</a></li>
             <li><a href="#">Android</a></li>
             <li><a href="#">Inteligência Artificial</a></li>
             <li><a href="#">Desenvolvimento</a></li>
             <li><a href="#">Tutoriais</a></li>
             <li><a href="#">Software</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="/pages/contato.html">Contato</a></li>
           </ul>
-          <a href="index.html"
+          <a href="/index.html"
             ><img
               class="menu-logo"
-              src="/assets/imagens/logos/logo.png"
+              src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
           /></a>
         </div>
@@ -49,12 +74,12 @@
         <nav
           role="navigation"
           aria-label="Navegação principal"
-          class="main-nav"
+          class="main-nav d-flex"
         >
           <a href="/" class="main-nav-link">Início</a>
           <a href="/pages/noticias.html" class="main-nav-link">Notícias</a>
           <div class="dropdown" id="dropdown-categorias">
-            <span id="dropdown-toggle" class="dropdown-toggle"
+            <span id="dropdown-toggle" class="dropdown-toggle d-flex"
               >Categorias <i class="fa fa-caret-down"></i
             ></span>
             <ul class="dropdown-content">
@@ -79,13 +104,13 @@
     </header>
     <main class="main-content">
       <section class="ultimas-noticias">
-        <div class="ultimas-noticias-header">
+        <div class="ultimas-noticias-header d-flex">
           <i class="fa-solid fa-rss"></i>
           <h2>Últimas Notícias</h2>
         </div>
-        <div class="row-noticias">
-          <article class="article-card">
-            <a href="pages/noticia-android15.html" class="article-card-link">
+        <div class="row-noticias d-flex">
+          <article class="article-card d-flex">
+            <a href="/pages/noticia-android15.html" class="article-card-link">
               <img
                 class="article-card-image"
                 src="/assets/imagens/noticias/android-15-novos-recursos-privacidade-ia.png"
@@ -98,8 +123,8 @@
             </a>
           </article>
 
-          <article class="article-card">
-            <a href="pages/noticia-dan-droids.html" class="article-card-link">
+          <article class="article-card d-flex">
+            <a href="/pages/bugdroid-raiz.html" class="article-card-link">
               <img
                 class="article-card-image"
                 src="/assets/imagens/noticias/dan-droids-pq.png"
@@ -112,8 +137,8 @@
             </a>
           </article>
 
-          <article class="article-card">
-            <a href="pages/noticia-android-e-ia.html" class="article-card-link">
+          <article class="article-card d-flex">
+            <a href="/pages/android-ia.html" class="article-card-link">
               <img
                 class="article-card-image"
                 src="/assets/imagens/noticias/Android-e-ia-parceria-para-o-futuro.png"
@@ -124,9 +149,9 @@
             </a>
           </article>
 
-          <article class="article-card">
+          <article class="article-card d-flex">
             <a
-              href="pages/android-interface-repaginada.html"
+              href="/pages/android-interface-repaginada.html"
               class="article-card-link"
             >
               <img
@@ -141,9 +166,9 @@
             </a>
           </article>
 
-          <article class="article-card">
+          <article class="article-card d-flex">
             <a
-              href="pages/noticia-ferramentas-devs-android.html"
+              href="/pages/ferramentas-devs-android-2025.html"
               class="article-card-link"
             >
               <img
@@ -157,11 +182,8 @@
               <p class="article-card-meta">Há 9 horas</p>
             </a>
           </article>
-          <article class="article-card">
-            <a
-              href="/pages/novas-bibliotecas-android.html"
-              class="article-card-link"
-            >
+          <article class="article-card d-flex">
+            <a href="#" class="article-card-link">
               <img
                 src="/assets/imagens/noticias/bibliotecas-android-essenciais.png"
                 alt="Novas bibliotecas Android otimizam performance"
@@ -174,8 +196,8 @@
             </a>
           </article>
 
-          <article class="article-card">
-            <a href="/pages/ux-mobile-2025.html" class="article-card-link">
+          <article class="article-card d-flex">
+            <a href="#" class="article-card-link">
               <img
                 src="/assets/imagens/noticias/ux-mobile-2025.png"
                 alt="Tendências de UX para apps mobile em 2025"
@@ -188,11 +210,8 @@
             </a>
           </article>
 
-          <article class="article-card">
-            <a
-              href="/pages/google-fuchsia-atualizacao.html"
-              class="article-card-link"
-            >
+          <article class="article-card d-flex">
+            <a href="#" class="article-card-link">
               <img
                 src="/assets/imagens/noticias/google-fuchsia-os-atualizacao-2025.png"
                 alt="Google Fuchsia OS recebe atualização importante"
@@ -205,8 +224,8 @@
             </a>
           </article>
 
-          <article class="article-card">
-            <a href="/pages/5g-expansao-brasil.html" class="article-card-link">
+          <article class="article-card d-flex">
+            <a href="#" class="article-card-link">
               <img
                 src="/assets/imagens/noticias/5g-brasil-cidades-2025.png"
                 alt="5G no Brasil: cidades que recebem a tecnologia em 2025"
@@ -219,11 +238,8 @@
             </a>
           </article>
 
-          <article class="article-card">
-            <a
-              href="/pages/produtividade-com-android.html"
-              class="article-card-link"
-            >
+          <article class="article-card d-flex">
+            <a href="#" class="article-card-link">
               <img
                 src="/assets/imagens/noticias/tendencias-apps-mobile-2025.png"
                 alt="Dicas para melhorar a produtividade no Android"
@@ -235,11 +251,8 @@
               <p class="article-card-meta">Há 30 minutos</p>
             </a>
           </article>
-          <article class="article-card">
-            <a
-              href="/pages/google-fuchsia-expansao.html"
-              class="article-card-link"
-            >
+          <article class="article-card d-flex">
+            <a href="#" class="article-card-link">
               <img
                 src="/assets/imagens/noticias/google-fuchsia-iot.png"
                 alt="Google Fuchsia expandindo para dispositivos IoT"
@@ -254,11 +267,8 @@
             </a>
           </article>
 
-          <article class="article-card">
-            <a
-              href="/pages/android-studio-dolphin.html"
-              class="article-card-link"
-            >
+          <article class="article-card d-flex">
+            <a href="#" class="article-card-link">
               <img
                 src="/assets/imagens/noticias/android-studio-dolphin-lancamento.png"
                 alt="Android Studio Dolphin é lançado com novidades"
@@ -284,7 +294,7 @@
           Receba as principais notícias e novidades sobre Android e tecnologia
           diretamente no seu e-mail.
         </p>
-        <form class="newsletter-form" autocomplete="off">
+        <form class="newsletter-form d-flex justify-center" autocomplete="off">
           <label for="newsletter-email" class="sr-only">E-mail</label>
           <input
             id="newsletter-email"
@@ -309,11 +319,11 @@
     </section>
     <footer class="footer-news">
       <div class="footer-container">
-        <div class="footer-main">
+        <div class="footer-main d-flex">
           <div class="footer-section">
             <img
               class="logo-footer"
-              src="/assets/imagens/logos/logo.png"
+              src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
             />
             <p>
