@@ -114,6 +114,12 @@
   transition: color 0.2s;
 }
 
+.search-form-header {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
 .search-form {
   position: relative;
   width: 350px;

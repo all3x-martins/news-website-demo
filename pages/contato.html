@@ -30,16 +30,22 @@
             <i class="fa fa-bars"></i>
           </button>
           <ul class="mobile-menu" id="mobile-menu" aria-hidden="true">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Notícias</a></li>
+            <button id="close-menu" aria-label="Fechar menu">×</button>
+            <img
+              class="menu-logo"
+              src="/assets/imagens/logo/logo.png"
+              alt="Logo Tech Explorer"
+            />
+            <li><a href="/index.html">Início</a></li>
+            <li><a href="/pages/noticias.html">Notícias</a></li>
             <li><a href="#">Android</a></li>
             <li><a href="#">Inteligência Artificial</a></li>
             <li><a href="#">Desenvolvimento</a></li>
             <li><a href="#">Tutoriais</a></li>
             <li><a href="#">Software</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="/pages/contato.html">Contato</a></li>
           </ul>
-          <a href="index.html"
+          <a href="/index.html"
             ><img
               class="menu-logo"
               src="/assets/imagens/logo/logo.png"
@@ -57,7 +63,7 @@
           aria-label="Navegação principal"
           class="main-nav d-flex"
         >
-          <a href="/" class="main-nav-link">Início</a>
+          <a href="/index.html" class="main-nav-link">Início</a>
           <a href="/pages/noticias.html" class="main-nav-link">Notícias</a>
           <div class="dropdown" id="dropdown-categorias">
             <span id="dropdown-toggle" class="dropdown-toggle d-flex"
@@ -82,6 +88,12 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
+      <form class="search-form search-form-header" id="search-form">
+        <input type="text" class="search-input" placeholder="Buscar..." />
+        <button type="submit" class="search-button-menu" aria-label="Buscar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
     </header>
     <main>
       <div class="form-container">

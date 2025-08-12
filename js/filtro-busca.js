@@ -1,24 +1,19 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const searchForm = document.getElementById('search-form');
-  const searchInput = document.querySelector('.search-input');
+document.addEventListener('DOMContentLoaded', () => {
+  const searchForms = document.querySelectorAll('form[id^="search-form"]');
 
-  if (!searchForm || !searchInput) {
-    console.log(
-      'Formulário ou input de busca não encontrado na página:',
-      window.location.pathname
-    );
-    return;
-  }
+  searchForms.forEach((form) => {
+    const input = form.querySelector('.search-input');
+    if (!input) return;
 
-  searchForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const termo = searchInput.value.trim().toLowerCase();
-    if (termo) {
-      localStorage.setItem('searchTerm', termo);
-      console.log('Termo de busca salvo:', termo);
-      window.location.href = '/pages/busca.html';
-    } else {
-      console.log('Nenhum termo de busca inserido');
-    }
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const termo = input.value.trim().toLowerCase();
+      if (termo) {
+        localStorage.setItem('searchTerm', termo);
+        window.location.href = '/pages/busca.html';
+      } else {
+        console.log('Nenhum termo de busca inserido');
+      }
+    });
   });
 });

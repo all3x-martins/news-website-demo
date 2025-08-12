@@ -9,7 +9,7 @@
     />
     <meta name="keywords" content="Android, Tecnologia, Notícias, Inovação" />
     <meta name="author" content="Tech Explorer" />
-    <title>Tech Explorer</title>
+    <title>Tech Explorer - Suas notícias de tecnologia</title>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
@@ -31,21 +31,12 @@
             <i class="fa fa-bars"></i>
           </button>
           <ul class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <button id="close-menu" aria-label="Fechar menu">×</button>
             <img
               class="menu-logo"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
             />
-            <form class="search-form-menu" id="search-form-menu">
-              <input type="text" class="search-input" placeholder="Buscar..." />
-              <button
-                type="submit"
-                class="search-button-menu"
-                aria-label="Buscar"
-              >
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </form>
             <li><a href="index.html">Início</a></li>
             <li><a href="/pages/noticias.html">Notícias</a></li>
             <li><a href="#">Android</a></li>
@@ -98,6 +89,12 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
+      <form class="search-form search-form-header" id="search-form">
+        <input type="text" class="search-input" placeholder="Buscar..." />
+        <button type="submit" class="search-button-menu" aria-label="Buscar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
     </header>
     <main class="main-content">
       <section class="destaque d-flex">
@@ -297,7 +294,8 @@
         </div>
       </div>
     </footer>
-    <script src="/js/filtro-busca.js"></script>
+    <div class="menu-open-overlay"></div>
     <script src="/js/ui.js"></script>
+    <script src="/js/filtro-busca.js"></script>
   </body>
 </html>
