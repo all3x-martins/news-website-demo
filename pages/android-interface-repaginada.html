@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
-    <link rel="icon" href="/assets/imagens/favicon/favicon.ico" />
+    <link rel="icon" href="/assets/icons/favicon/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -38,14 +38,35 @@
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
             />
-            <li><a href="/index.html">Início</a></li>
-            <li><a href="/pages/noticias.html">Notícias</a></li>
-            <li><a href="#">Android</a></li>
-            <li><a href="#">Inteligência Artificial</a></li>
-            <li><a href="#">Desenvolvimento</a></li>
-            <li><a href="#">Tutoriais</a></li>
-            <li><a href="#">Software</a></li>
-            <li><a href="/pages/contato.html">Contato</a></li>
+            <li class="menu-item">
+              <i class="fa-solid fa-house"></i> <a href="/index.html">Início</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-newspaper"></i>
+              <a href="noticias.html">Notícias</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-brands fa-android"></i> <a href="#">Android</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-brain"></i>
+              <a href="#">Inteligência Artificial</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-code"></i> <a href="#">Desenvolvimento</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <a href="#">Tutoriais</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-laptop"></i>
+              <a href="#">Software</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-message"></i>
+              <a href="contato.html">Contato</a>
+            </li>
           </ul>
           <a href="/index.html"
             ><img
@@ -66,7 +87,7 @@
           class="main-nav d-flex"
         >
           <a href="/index.html" class="main-nav-link">Início</a>
-          <a href="/pages/noticias.html" class="main-nav-link">Notícias</a>
+          <a href="noticias.html" class="main-nav-link">Notícias</a>
           <div class="dropdown" id="dropdown-categorias">
             <span id="dropdown-toggle" class="dropdown-toggle d-flex"
               >Categorias <i class="fa fa-caret-down"></i
@@ -84,7 +105,7 @@
               <li><a href="#" class="dropdown-content-link">Tutoriais</a></li>
             </ul>
           </div>
-          <a href="/pages/contato.html" class="main-nav-link">Contato</a>
+          <a href="contato.html" class="main-nav-link">Contato</a>
         </nav>
         <button class="search-toggle-mobile">
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -97,110 +118,110 @@
         </button>
       </form>
     </header>
-    <main class="conteudo-noticia">
-      <a
-        href="noticias.html"
-        class="voltar-noticias"
-        aria-label="Voltar para a listagem de notícias"
-      >
-        ← Voltar para notícias
-      </a>
-
-      <header>
-        <h1>Interface nova, vibe nova: o Android repaginado</h1>
-        <h2>
-          O novo visual foca em acessibilidade e agilidade. Veja como ele
-          impacta a experiência de uso.
-        </h2>
-        <time class="data-publicacao" datetime="2025-08-03"
-          >Publicado em 03/08/2025</time
+    <main class="main-content">
+      <article class="conteudo-noticia">
+        <a
+          href="noticias.html"
+          class="voltar-noticias"
+          aria-label="Voltar para a listagem de notícias"
         >
-        <img
-          src="/assets/imagens/noticias/mudanças-na-interface-do-android.png"
-          alt="Imagem conceitual da nova interface do Android"
-          class="capa-noticia"
-          loading="lazy"
-        />
-      </header>
+          ← Voltar para notícias
+        </a>
 
-      <section>
-        <p>
-          Se você achava que o Android já estava no seu auge visual, pode se
-          preparar: a nova interface chegou para mudar o jogo. Com um design
-          mais limpo, intuitivo e cheio de micro animações, a vibe agora é de um
-          sistema que responde ao seu toque de forma mais fluida e acessível.
-        </p>
+        <header>
+          <h1>Interface nova, vibe nova: o Android repaginado</h1>
+          <h2>
+            O novo visual foca em acessibilidade e agilidade. Veja como ele
+            impacta a experiência de uso.
+          </h2>
+          <time class="data-publicacao" datetime="2025-08-03"
+            >Publicado em 03/08/2025</time
+          >
+          <img
+            src="/assets/imagens/noticias/mudanças-na-interface-do-android.png"
+            alt="Imagem conceitual da nova interface do Android"
+            class="capa-noticia"
+            loading="lazy"
+          />
+        </header>
 
-        <h3>Material You: Seu Android, sua cara</h3>
-        <p>
-          A grande estrela dessa repaginada é o <strong>Material You</strong>.
-          Não estamos falando só de mudar wallpapers. Agora, o Android adapta as
-          cores do sistema com base no seu estilo, deixando botões, ícones e até
-          widgets com uma estética harmoniosa e personalizada.
-        </p>
-        <p>
-          O legal? Não é só uma questão de beleza. Essa personalização também
-          melhora a acessibilidade, destacando cores com mais contraste quando
-          necessário.
-        </p>
+        <section>
+          <p>
+            Se você achava que o Android já estava no seu auge visual, pode se
+            preparar: a nova interface chegou para mudar o jogo. Com um design
+            mais limpo, intuitivo e cheio de micro animações, a vibe agora é de
+            um sistema que responde ao seu toque de forma mais fluida e
+            acessível.
+          </p>
 
-        <h3>Menos poluição visual, mais foco</h3>
-        <p>
-          Uma das maiores mudanças foi a simplificação dos elementos de
-          interface. Sabe aqueles menus com opções infinitas? Eles agora
-          aparecem apenas quando você realmente precisa. Tudo para que o usuário
-          não se sinta perdido no meio de tantas informações.
-        </p>
-        <p>
-          Essa filosofia de "foco no essencial" também trouxe melhorias nos
-          gestos de navegação, deixando o uso com uma mão só muito mais
-          confortável.
-        </p>
+          <h3>Material You: Seu Android, sua cara</h3>
+          <p>
+            A grande estrela dessa repaginada é o <strong>Material You</strong>.
+            Não estamos falando só de mudar wallpapers. Agora, o Android adapta
+            as cores do sistema com base no seu estilo, deixando botões, ícones
+            e até widgets com uma estética harmoniosa e personalizada.
+          </p>
+          <p>
+            O legal? Não é só uma questão de beleza. Essa personalização também
+            melhora a acessibilidade, destacando cores com mais contraste quando
+            necessário.
+          </p>
 
-        <h3>Acessibilidade que funciona (e não é só promessa)</h3>
-        <p>
-          O Android não está só bonito, está mais inclusivo. Com novos recursos
-          de leitura de tela, controle por voz aprimorado e suporte a gestos
-          ampliado, a nova interface garante que mais pessoas possam interagir
-          com o sistema de forma natural.
-        </p>
-        <p>
-          Detalhe importante: as animações agora são adaptativas. Isso significa
-          que, para quem precisa de interfaces mais estáticas (por exemplo,
-          pessoas sensíveis a movimentos), o sistema pode suavizar ou eliminar
-          as transições.
-        </p>
+          <h3>Menos poluição visual, mais foco</h3>
+          <p>
+            Uma das maiores mudanças foi a simplificação dos elementos de
+            interface. Sabe aqueles menus com opções infinitas? Eles agora
+            aparecem apenas quando você realmente precisa. Tudo para que o
+            usuário não se sinta perdido no meio de tantas informações.
+          </p>
+          <p>
+            Essa filosofia de "foco no essencial" também trouxe melhorias nos
+            gestos de navegação, deixando o uso com uma mão só muito mais
+            confortável.
+          </p>
 
-        <div class="citacao-destaque">
-          “O novo Android é mais do que uma repaginada visual. É um convite para
-          o usuário ser coautor da sua própria experiência.”
-        </div>
+          <h3>Acessibilidade que funciona (e não é só promessa)</h3>
+          <p>
+            O Android não está só bonito, está mais inclusivo. Com novos
+            recursos de leitura de tela, controle por voz aprimorado e suporte a
+            gestos ampliado, a nova interface garante que mais pessoas possam
+            interagir com o sistema de forma natural.
+          </p>
+          <p>
+            Detalhe importante: as animações agora são adaptativas. Isso
+            significa que, para quem precisa de interfaces mais estáticas (por
+            exemplo, pessoas sensíveis a movimentos), o sistema pode suavizar ou
+            eliminar as transições.
+          </p>
 
-        <h3>Agilidade na palma da mão</h3>
-        <p>
-          A nova interface não é só estética. O Android está mais leve e
-          otimizado. Os apps abrem mais rápido, a multitarefa ficou mais
-          inteligente, e os atalhos contextuais estão presentes em praticamente
-          todas as telas.
-        </p>
-        <p>
-          Imagine receber uma notificação de e-mail e já poder responder direto
-          dela, sem precisar abrir o aplicativo. Esse nível de agilidade agora
-          está em todos os cantos do sistema.
-        </p>
+          <div class="citacao-destaque">
+            “O novo Android é mais do que uma repaginada visual. É um convite
+            para o usuário ser coautor da sua própria experiência.”
+          </div>
 
-        <p>
-          Com tudo isso, o Android dá um salto de usabilidade, mostrando que um
-          design bonito pode (e deve) ser funcional.
-        </p>
+          <h3>Agilidade na palma da mão</h3>
+          <p>
+            A nova interface não é só estética. O Android está mais leve e
+            otimizado. Os apps abrem mais rápido, a multitarefa ficou mais
+            inteligente, e os atalhos contextuais estão presentes em
+            praticamente todas as telas.
+          </p>
+          <p>
+            Imagine receber uma notificação de e-mail e já poder responder
+            direto dela, sem precisar abrir o aplicativo. Esse nível de
+            agilidade agora está em todos os cantos do sistema.
+          </p>
 
-        <p>E aí, pronto para dar uma cara nova ao seu smartphone?</p>
-      </section>
+          <p>
+            Com tudo isso, o Android dá um salto de usabilidade, mostrando que
+            um design bonito pode (e deve) ser funcional.
+          </p>
+
+          <p>E aí, pronto para dar uma cara nova ao seu smartphone?</p>
+        </section>
+      </article>
     </main>
-    <section
-      class="newsletter newsletter-section"
-      aria-labelledby="newsletter-title"
-    >
+    <section class="newsletter-section" aria-labelledby="newsletter-title">
       <div class="newsletter-container">
         <h2 id="newsletter-title" class="newsletter-container-title">
           Assine nossa Newsletter
@@ -253,13 +274,13 @@
                 <a href="/index.html">Início</a>
               </li>
               <li>
-                <a href="/pages/sobre.html">Sobre</a>
+                <a href="sobre.html">Sobre</a>
               </li>
               <li>
-                <a href="/pages/contato.html">Contato</a>
+                <a href="contato.html">Contato</a>
               </li>
               <li>
-                <a href="/pages/privacidade.html">Política de Privacidade</a>
+                <a href="privacidade.html">Política de Privacidade</a>
               </li>
             </ul>
           </div>
@@ -287,7 +308,8 @@
         </div>
       </div>
     </footer>
-    <script src="/js/filtro-busca.js"></script>
+    <div class="menu-open-overlay"></div>
     <script src="/js/ui.js"></script>
+    <script src="/js/filtro-busca.js"></script>
   </body>
 </html>

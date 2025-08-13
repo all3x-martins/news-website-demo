@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
-    <link rel="icon" href="/assets/imagens/favicon/favicon.ico" />
+    <link rel="icon" href="/assets/icons/favicon/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -37,13 +37,13 @@
               alt="Logo Tech Explorer"
             />
             <li><a href="/index.html">Início</a></li>
-            <li><a href="/pages/noticias.html">Notícias</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
             <li><a href="#">Android</a></li>
             <li><a href="#">Inteligência Artificial</a></li>
             <li><a href="#">Desenvolvimento</a></li>
             <li><a href="#">Tutoriais</a></li>
             <li><a href="#">Software</a></li>
-            <li><a href="/pages/contato.html">Contato</a></li>
+            <li><a href="contato.html">Contato</a></li>
           </ul>
           <a href="/index.html"
             ><img
@@ -63,8 +63,8 @@
           aria-label="Navegação principal"
           class="main-nav d-flex"
         >
-          <a href="/" class="main-nav-link">Início</a>
-          <a href="/pages/noticias.html" class="main-nav-link">Notícias</a>
+          <a href="/index.html" class="main-nav-link">Início</a>
+          <a href="noticias.html" class="main-nav-link">Notícias</a>
           <div class="dropdown" id="dropdown-categorias">
             <span id="dropdown-toggle" class="dropdown-toggle d-flex"
               >Categorias <i class="fa fa-caret-down"></i
@@ -82,7 +82,7 @@
               <li><a href="#" class="dropdown-content-link">Tutoriais</a></li>
             </ul>
           </div>
-          <a href="/pages/contato.html" class="main-nav-link">Contato</a>
+          <a href="contato.html" class="main-nav-link">Contato</a>
         </nav>
         <button class="search-toggle-mobile">
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -95,48 +95,50 @@
         </button>
       </form>
     </header>
-    <main class="politica-container">
-      <h1 class="titulo-principal">Política de Privacidade</h1>
-      <p>
-        Esta política explica como o Blog Tech Explorer coleta, usa, protege e
-        compartilha as informações dos usuários.
-      </p>
-      <h2 class="titulo-secundario">Coleta de Informações</h2>
-      <p>
-        Coletamos informações fornecidas voluntariamente pelo usuário, como nome
-        e e-mail, ao preencher o formulário de contato.
-      </p>
-      <h2 class="titulo-secundario">Uso das Informações</h2>
-      <p>
-        As informações são utilizadas apenas para responder dúvidas, enviar
-        novidades ou realizar contato solicitado pelo usuário.
-      </p>
-      <h2 class="titulo-secundario">Cookies</h2>
-      <p>
-        Utilizamos cookies para melhorar a experiência de navegação. Você pode
-        desativá-los nas configurações do seu navegador.
-      </p>
-      <h2 class="titulo-secundario">Compartilhamento</h2>
-      <p>
-        Não compartilhamos informações pessoais com terceiros, exceto quando
-        exigido por lei.
-      </p>
-      <h2 class="titulo-secundario">Segurança</h2>
-      <p>
-        Adotamos medidas para proteger os dados dos usuários, mas nenhuma
-        transmissão pela internet é totalmente segura.
-      </p>
-      <h2 class="titulo-secundario">Alterações nesta Política</h2>
-      <p>
-        Esta política pode ser atualizada a qualquer momento. Recomendamos
-        revisá-la periodicamente.
-      </p>
-      <p class="contato-final">
-        Em caso de dúvidas, entre em contato pelo e-mail
-        <a href="mailto:contato@techexplorer.com" class="link-email">
-          contato@techexplorer.com </a
-        >.
-      </p>
+    <main class="main-content">
+      <div class="politica-container">
+        <h1 class="titulo-principal">Política de Privacidade</h1>
+        <p>
+          Esta política explica como o Blog Tech Explorer coleta, usa, protege e
+          compartilha as informações dos usuários.
+        </p>
+        <h2 class="titulo-secundario">Coleta de Informações</h2>
+        <p>
+          Coletamos informações fornecidas voluntariamente pelo usuário, como
+          nome e e-mail, ao preencher o formulário de contato.
+        </p>
+        <h2 class="titulo-secundario">Uso das Informações</h2>
+        <p>
+          As informações são utilizadas apenas para responder dúvidas, enviar
+          novidades ou realizar contato solicitado pelo usuário.
+        </p>
+        <h2 class="titulo-secundario">Cookies</h2>
+        <p>
+          Utilizamos cookies para melhorar a experiência de navegação. Você pode
+          desativá-los nas configurações do seu navegador.
+        </p>
+        <h2 class="titulo-secundario">Compartilhamento</h2>
+        <p>
+          Não compartilhamos informações pessoais com terceiros, exceto quando
+          exigido por lei.
+        </p>
+        <h2 class="titulo-secundario">Segurança</h2>
+        <p>
+          Adotamos medidas para proteger os dados dos usuários, mas nenhuma
+          transmissão pela internet é totalmente segura.
+        </p>
+        <h2 class="titulo-secundario">Alterações nesta Política</h2>
+        <p>
+          Esta política pode ser atualizada a qualquer momento. Recomendamos
+          revisá-la periodicamente.
+        </p>
+        <p class="contato-final">
+          Em caso de dúvidas, entre em contato pelo e-mail
+          <a href="mailto:contato@techexplorer.com" class="link-email">
+            contato@techexplorer.com </a
+          >.
+        </p>
+      </div>
     </main>
     <footer class="footer-news">
       <div class="footer-container">
@@ -153,24 +155,24 @@
             </p>
           </div>
           <div class="footer-section">
-            <h4>Links úteis</h4>
-            <ul>
+            <h4 class="footer-section-title">Links úteis</h4>
+            <ul class="footer-links">
               <li>
                 <a href="/index.html">Início</a>
               </li>
               <li>
-                <a href="/pages/sobre.html">Sobre</a>
+                <a href="sobre.html">Sobre</a>
               </li>
               <li>
-                <a href="/pages/contato.html">Contato</a>
+                <a href="contato.html">Contato</a>
               </li>
               <li>
-                <a href="/pages/privacidade.html">Política de Privacidade</a>
+                <a href="privacidade.html">Política de Privacidade</a>
               </li>
             </ul>
           </div>
           <div class="footer-section">
-            <h4>Categorias</h4>
+            <h4 class="footer-section-title">Categorias</h4>
             <ul>
               <li><a href="#">Android</a></li>
               <li><a href="#">Inteligência Artificial</a></li>
@@ -179,7 +181,7 @@
             </ul>
           </div>
           <div class="footer-section">
-            <h4>Siga-nos</h4>
+            <h4 class="footer-section-title">Siga-nos</h4>
             <div class="footer-social">
               <a href="#"><i class="fa-brands fa-instagram"></i></a>
               <a href="#"><i class="fa-brands fa-x-twitter"></i></a>

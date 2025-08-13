@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
-    <link rel="icon" href="/assets/imagens/favicon/favicon.ico" />
+    <link rel="icon" href="/assets/icons/favicon/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -36,14 +36,35 @@
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
             />
-            <li><a href="/index.html">Início</a></li>
-            <li><a href="/pages/noticias.html">Notícias</a></li>
-            <li><a href="#">Android</a></li>
-            <li><a href="#">Inteligência Artificial</a></li>
-            <li><a href="#">Desenvolvimento</a></li>
-            <li><a href="#">Tutoriais</a></li>
-            <li><a href="#">Software</a></li>
-            <li><a href="/pages/contato.html">Contato</a></li>
+            <li class="menu-item">
+              <i class="fa-solid fa-house"></i> <a href="/index.html">Início</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-newspaper"></i>
+              <a href="noticias.html">Notícias</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-brands fa-android"></i> <a href="#">Android</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-brain"></i>
+              <a href="#">Inteligência Artificial</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-code"></i> <a href="#">Desenvolvimento</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <a href="#">Tutoriais</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-laptop"></i>
+              <a href="#">Software</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-message"></i>
+              <a href="contato.html">Contato</a>
+            </li>
           </ul>
           <a href="/index.html"
             ><img
@@ -64,7 +85,7 @@
           class="main-nav d-flex"
         >
           <a href="/index.html" class="main-nav-link">Início</a>
-          <a href="/pages/noticias.html" class="main-nav-link">Notícias</a>
+          <a href="noticias.html" class="main-nav-link">Notícias</a>
           <div class="dropdown" id="dropdown-categorias">
             <span id="dropdown-toggle" class="dropdown-toggle d-flex"
               >Categorias <i class="fa fa-caret-down"></i
@@ -82,7 +103,7 @@
               <li><a href="#" class="dropdown-content-link">Tutoriais</a></li>
             </ul>
           </div>
-          <a href="/pages/contato.html" class="main-nav-link">Contato</a>
+          <a href="contato.html" class="main-nav-link">Contato</a>
         </nav>
         <button class="search-toggle-mobile">
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -95,121 +116,120 @@
         </button>
       </form>
     </header>
-    <main class="conteudo-noticia">
-      <a
-        href="noticias.html"
-        class="voltar-noticias"
-        aria-label="Voltar para a listagem de notícias"
-        >← Voltar para notícias</a
-      >
-
-      <section>
-        <h1>
-          Ferramentas para devs Android em 2025: APIs que turbinam a
-          produtividade
-        </h1>
-        <h2>
-          As novas APIs trazem facilidades que vão acelerar o desenvolvimento de
-          apps nativos e deixar seu workflow muito mais fluido.
-        </h2>
-        <time class="data-publicacao" datetime="2025-08-03"
-          >Publicado em 03/08/2025</time
+    <main class="main-content">
+      <article class="conteudo-noticia">
+        <a
+          href="noticias.html"
+          class="voltar-noticias"
+          aria-label="Voltar para a listagem de notícias"
+          >← Voltar para notícias</a
         >
 
-        <img
-          src="/assets/imagens/noticias/ferramentas-para-devs-android.png"
-          alt="Desenvolvedor Android trabalhando com ferramentas modernas"
-          class="capa-noticia"
-          loading="lazy"
-        />
+        <section>
+          <h1>
+            Ferramentas para devs Android em 2025: APIs que turbinam a
+            produtividade
+          </h1>
+          <h2>
+            As novas APIs trazem facilidades que vão acelerar o desenvolvimento
+            de apps nativos e deixar seu workflow muito mais fluido.
+          </h2>
+          <time class="data-publicacao" datetime="2025-08-03"
+            >Publicado em 03/08/2025</time
+          >
 
-        <p>
-          Você é dev Android e vive naquela eterna busca por produtividade?
-          Então pode comemorar, porque 2025 chegou com um arsenal de ferramentas
-          e APIs que vão facilitar (e muito) a sua vida na criação de apps
-          nativos.
-        </p>
+          <img
+            src="/assets/imagens/noticias/ferramentas-para-devs-android.png"
+            alt="Desenvolvedor Android trabalhando com ferramentas modernas"
+            class="capa-noticia"
+            loading="lazy"
+          />
 
-        <p>
-          O Google está apostando pesado em recursos que deixam o
-          desenvolvimento mais inteligente, menos repetitivo e com uma
-          performance de dar orgulho. Vamos dar um giro pelas principais
-          novidades?
-        </p>
+          <p>
+            Você é dev Android e vive naquela eterna busca por produtividade?
+            Então pode comemorar, porque 2025 chegou com um arsenal de
+            ferramentas e APIs que vão facilitar (e muito) a sua vida na criação
+            de apps nativos.
+          </p>
 
-        <h3>Jetpack Compose 2.0: declarativo com turbo</h3>
-        <p>
-          O <strong>Jetpack Compose</strong> já era queridinho, mas a versão 2.0
-          veio com tudo. Com renderização ainda mais otimizada e integração
-          direta com animações fluidas, construir interfaces modernas ficou
-          ainda mais simples.
-        </p>
-        <p>
-          A cereja do bolo? Suporte nativo a temas dinâmicos via
-          <strong>Material You</strong>, sem precisar criar workarounds.
-        </p>
+          <p>
+            O Google está apostando pesado em recursos que deixam o
+            desenvolvimento mais inteligente, menos repetitivo e com uma
+            performance de dar orgulho. Vamos dar um giro pelas principais
+            novidades?
+          </p>
 
-        <h3>Android Studio “Vortex”: IDE mais inteligente</h3>
-        <p>
-          O Android Studio ganhou o codinome <strong>Vortex</strong>, e não é à
-          toa. O autocomplete está mais esperto, as sugestões de código entendem
-          o contexto da sua aplicação, e o emulador agora consome metade da
-          memória RAM.
-        </p>
-        <p>
-          Além disso, a integração com Firebase e Play Console está muito mais
-          fluida. É literalmente possível gerenciar releases sem sair da IDE.
-        </p>
+          <h3>Jetpack Compose 2.0: declarativo com turbo</h3>
+          <p>
+            O <strong>Jetpack Compose</strong> já era queridinho, mas a versão
+            2.0 veio com tudo. Com renderização ainda mais otimizada e
+            integração direta com animações fluidas, construir interfaces
+            modernas ficou ainda mais simples.
+          </p>
+          <p>
+            A cereja do bolo? Suporte nativo a temas dinâmicos via
+            <strong>Material You</strong>, sem precisar criar workarounds.
+          </p>
 
-        <h3>APIs de Inteligência Artificial embarcada</h3>
-        <p>
-          Se antes integrar IA era um trabalho braçal, agora ficou plug and
-          play. Com as novas
-          <strong>APIs de On-Device Machine Learning</strong>, seu app pode usar
-          modelos pré-treinados de reconhecimento de voz, imagem e texto sem
-          depender de conexões externas.
-        </p>
-        <p>
-          E sim, tudo otimizado para rodar liso até em dispositivos mid-range.
-        </p>
+          <h3>Android Studio “Vortex”: IDE mais inteligente</h3>
+          <p>
+            O Android Studio ganhou o codinome <strong>Vortex</strong>, e não é
+            à toa. O autocomplete está mais esperto, as sugestões de código
+            entendem o contexto da sua aplicação, e o emulador agora consome
+            metade da memória RAM.
+          </p>
+          <p>
+            Além disso, a integração com Firebase e Play Console está muito mais
+            fluida. É literalmente possível gerenciar releases sem sair da IDE.
+          </p>
 
-        <h3>Android App Bundles 2.0: deploy sem dor de cabeça</h3>
-        <p>
-          Lançar apps está mais simples com o <strong>App Bundle 2.0</strong>. O
-          processo de otimização de pacotes está automatizado e os recursos de
-          <strong>play asset delivery</strong> agora fazem streaming de partes
-          do app conforme o uso.
-        </p>
-        <p>
-          Resultado? Apps mais leves e atualizações quase invisíveis para o
-          usuário.
-        </p>
+          <h3>APIs de Inteligência Artificial embarcada</h3>
+          <p>
+            Se antes integrar IA era um trabalho braçal, agora ficou plug and
+            play. Com as novas
+            <strong>APIs de On-Device Machine Learning</strong>, seu app pode
+            usar modelos pré-treinados de reconhecimento de voz, imagem e texto
+            sem depender de conexões externas.
+          </p>
+          <p>
+            E sim, tudo otimizado para rodar liso até em dispositivos mid-range.
+          </p>
 
-        <h3>Ferramentas de acessibilidade by default</h3>
-        <p>
-          Outro destaque são os novos kits de acessibilidade para
-          desenvolvedores. Agora, implementar recursos como navegação por voz,
-          feedback háptico inteligente e leitura de tela está a um clique de
-          distância, com templates prontos para customizar.
-        </p>
-        <p>
-          O Android não quer que você “pense em acessibilidade depois”. Ela já
-          vem no combo.
-        </p>
+          <h3>Android App Bundles 2.0: deploy sem dor de cabeça</h3>
+          <p>
+            Lançar apps está mais simples com o <strong>App Bundle 2.0</strong>.
+            O processo de otimização de pacotes está automatizado e os recursos
+            de <strong>play asset delivery</strong> agora fazem streaming de
+            partes do app conforme o uso.
+          </p>
+          <p>
+            Resultado? Apps mais leves e atualizações quase invisíveis para o
+            usuário.
+          </p>
 
-        <p>
-          O Android 2025 mostra que produtividade e inovação podem andar juntas.
-          Com tantas ferramentas novas, criar apps nativos nunca foi tão rápido,
-          eficiente e... divertido.
-        </p>
+          <h3>Ferramentas de acessibilidade by default</h3>
+          <p>
+            Outro destaque são os novos kits de acessibilidade para
+            desenvolvedores. Agora, implementar recursos como navegação por voz,
+            feedback háptico inteligente e leitura de tela está a um clique de
+            distância, com templates prontos para customizar.
+          </p>
+          <p>
+            O Android não quer que você “pense em acessibilidade depois”. Ela já
+            vem no combo.
+          </p>
 
-        <p>E aí, preparado para dar o play no seu próximo projeto?</p>
-      </section>
+          <p>
+            O Android 2025 mostra que produtividade e inovação podem andar
+            juntas. Com tantas ferramentas novas, criar apps nativos nunca foi
+            tão rápido, eficiente e... divertido.
+          </p>
+
+          <p>E aí, preparado para dar o play no seu próximo projeto?</p>
+        </section>
+      </article>
     </main>
-    <section
-      class="newsletter newsletter-section"
-      aria-labelledby="newsletter-title"
-    >
+    <section class="newsletter-section" aria-labelledby="newsletter-title">
       <div class="newsletter-container">
         <h2 id="newsletter-title" class="newsletter-container-title">
           Assine nossa Newsletter
@@ -262,13 +282,13 @@
                 <a href="/index.html">Início</a>
               </li>
               <li>
-                <a href="/pages/sobre.html">Sobre</a>
+                <a href="sobre.html">Sobre</a>
               </li>
               <li>
-                <a href="/pages/contato.html">Contato</a>
+                <a href="contato.html">Contato</a>
               </li>
               <li>
-                <a href="/pages/privacidade.html">Política de Privacidade</a>
+                <a href="privacidade.html">Política de Privacidade</a>
               </li>
             </ul>
           </div>
@@ -296,7 +316,8 @@
         </div>
       </div>
     </footer>
-    <script src="/js/filtro-busca.js"></script>
+    <div class="menu-open-overlay"></div>
     <script src="/js/ui.js"></script>
+    <script src="/js/filtro-busca.js"></script>
   </body>
 </html>

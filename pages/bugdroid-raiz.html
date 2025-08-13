@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
-    <link rel="icon" href="/assets/imagens/favicon/favicon.ico" />
+    <link rel="icon" href="/assets/icons/favicon/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -36,14 +36,35 @@
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
             />
-            <li><a href="/index.html">Início</a></li>
-            <li><a href="/pages/noticias.html">Notícias</a></li>
-            <li><a href="#">Android</a></li>
-            <li><a href="#">Inteligência Artificial</a></li>
-            <li><a href="#">Desenvolvimento</a></li>
-            <li><a href="#">Tutoriais</a></li>
-            <li><a href="#">Software</a></li>
-            <li><a href="/pages/contato.html">Contato</a></li>
+            <li class="menu-item">
+              <i class="fa-solid fa-house"></i> <a href="/index.html">Início</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-newspaper"></i>
+              <a href="noticias.html">Notícias</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-brands fa-android"></i> <a href="#">Android</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-brain"></i>
+              <a href="#">Inteligência Artificial</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-code"></i> <a href="#">Desenvolvimento</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <a href="#">Tutoriais</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-laptop"></i>
+              <a href="#">Software</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-message"></i>
+              <a href="contato.html">Contato</a>
+            </li>
           </ul>
           <a href="/index.html"
             ><img
@@ -64,7 +85,7 @@
           class="main-nav d-flex"
         >
           <a href="/index.html" class="main-nav-link">Início</a>
-          <a href="/pages/noticias.html" class="main-nav-link">Notícias</a>
+          <a href="noticias.html" class="main-nav-link">Notícias</a>
           <div class="dropdown" id="dropdown-categorias">
             <span id="dropdown-toggle" class="dropdown-toggle d-flex"
               >Categorias <i class="fa fa-caret-down"></i
@@ -82,7 +103,7 @@
               <li><a href="#" class="dropdown-content-link">Tutoriais</a></li>
             </ul>
           </div>
-          <a href="/pages/contato.html" class="main-nav-link">Contato</a>
+          <a href="contato.html" class="main-nav-link">Contato</a>
         </nav>
         <button class="search-toggle-mobile">
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -95,304 +116,309 @@
         </button>
       </form>
     </header>
-    <main class="conteudo-noticia">
-      <a
-        href="noticias.html"
-        class="voltar-noticias"
-        aria-label="Voltar para a listagem de notícias"
-      >
-        ← Voltar para notícias
-      </a>
-
-      <header>
-        <h1>Bugdroid raiz: a origem do robozinho verde</h1>
-        <h2>
-          A história por trás do mascote do Android e sua evolução até se tornar
-          um ícone global.
-        </h2>
-        <time class="data-publicacao" datetime="2025-08-03"
-          >Publicado em 03/08/2025</time
+    <main class="main-content">
+      <article class="conteudo-noticia">
+        <a
+          href="noticias.html"
+          class="voltar-noticias"
+          aria-label="Voltar para a listagem de notícias"
         >
-        <img
-          src="/assets/imagens/noticias/dan-droids.png "
-          alt="Primeira versão do mascote do Android, o Dandroid"
-          class="capa-noticia"
-          loading="lazy"
-        />
-      </header>
+          ← Voltar para notícias
+        </a>
 
-      <section>
-        <p>
-          Você já parou pra pensar de onde veio aquele simpático robozinho verde
-          do Android? Não? Pois se prepare, porque a história dele é daquelas
-          que começa como uma piada interna e acaba virando um ícone mundial.
-        </p>
-
-        <h3>A primeira tentativa (spoiler: deu ruim)</h3>
-        <p>
-          Tudo começou lá em 2007, quando um engenheiro do Google, o
-          <strong>Dan Morrill</strong>, decidiu que o Android precisava de um
-          mascote. Só que ninguém tinha pedido isso oficialmente. O Dan
-          simplesmente abriu o
-          <a
-            href="https://inkscape.org/pt-br/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="externo"
-            >Inkscape</a
+        <header>
+          <h1>Bugdroid raiz: a origem do robozinho verde</h1>
+          <h2>
+            A história por trás do mascote do Android e sua evolução até se
+            tornar um ícone global.
+          </h2>
+          <time class="data-publicacao" datetime="2025-08-03"
+            >Publicado em 03/08/2025</time
           >
-          (um editor de imagens open-source) e, no melhor estilo “deixa que eu
-          faço”, criou uns robozinhos meio esquisitos.
-        </p>
-
-        <p>
-          O resultado? Bem... eles ficaram tão bizarros que ganharam um apelido
-          carinhoso: <strong>Dandroids</strong>. Era só pra ser uma brincadeira
-          com a equipe, mas olha, poderia ter dado ruim se fosse oficial.
-        </p>
-
-        <h3>Hora de chamar os adultos (e uma designer de verdade)</h3>
-        <p>
-          Como o projeto do Android começou a ganhar corpo, o pessoal resolveu
-          levar a ideia de mascote a sério. A missão foi dada à ilustradora
-          russa
-          <a
-            href="https://www.irinablok.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="externo"
-            >Irina Blok</a
-          >, também funcionária do <strong>Google</strong>.
-        </p>
-
-        <picture>
-          <source
-            media="(max-width: 670px)"
-            srcset="/assets/imagens/noticias/irina-blok-pq.jpg"
-            loading="lazy"
-          />
           <img
-            src="/assets/imagens/noticias/irina-blok.jpg"
-            alt="Irina Blok, criadora do Bugdroid"
+            src="/assets/imagens/noticias/dan-droids.png "
+            alt="Primeira versão do mascote do Android, o Dandroid"
+            class="capa-noticia"
             loading="lazy"
           />
-        </picture>
+        </header>
 
-        <p>
-          A Irina queria algo simples, que qualquer pessoa pudesse reconhecer à
-          primeira vista. E aí vem a parte mais inusitada da história: a
-          inspiração pro <strong>Bugdroid</strong> veio das plaquinhas de
-          banheiro — sim, aquelas figurinhas minimalistas que mostram se é
-          masculino ou feminino.
-        </p>
-
-        <img
-          src="/assets/imagens/noticias/bugdroid.png"
-          class="pequena"
-          alt="Bugdroid"
-          loading="lazy"
-        />
-
-        <p>
-          Com poucos traços e um visual "chapadinho", nasceu o
-          <strong>Bugdroid</strong>, o robozinho que hoje é praticamente o
-          "rosto" do Android.
-        </p>
-
-        <h3>Simplicidade é a chave</h3>
-        <p>
-          O sucesso do Bugdroid veio justamente do seu visual simples, limpo e
-          amigável. Ele virou um personagem altamente personalizável, e o resto
-          é história. Hoje ele aparece de todo jeito: ninja, astronauta, com
-          fantasia de cupcake, ou simplesmente curtindo uma vibe casual.
-        </p>
-
-        <div class="video">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube-nocookie.com/embed/l2UDgpLz20M"
-            title="A próxima evolução do Android"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
-
-        <aside>
-          <h3>Sabia que o Android já teve versões com nome de doce?</h3>
+        <section>
           <p>
-            Se você acha que só o Bugdroid tem uma história divertida, segura
-            essa: até a versão 9.0, cada lançamento do Android tinha nome de
-            sobremesa, seguindo a ordem do alfabeto. Era tipo um buffet de
-            novidades. Quer ver?
+            Você já parou pra pensar de onde veio aquele simpático robozinho
+            verde do Android? Não? Pois se prepare, porque a história dele é
+            daquelas que começa como uma piada interna e acaba virando um ícone
+            mundial.
           </p>
-          <ul>
-            <li>
-              1.5 -
-              <a
-                href="https://pt.wikipedia.org/wiki/Android_Cupcake"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="externo"
-                >Cupcake</a
-              >
-            </li>
-            <li>
-              1.6 -
-              <a
-                href="https://pt.wikipedia.org/wiki/Android_Donut"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="externo"
-                >Donut</a
-              >
-            </li>
-            <li>
-              2.0 -
-              <a
-                href="https://pt.wikipedia.org/wiki/Android_Eclair"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="externo"
-                >Eclair</a
-              >
-            </li>
-            <li>
-              2.2 -
-              <a
-                href="https://pt.wikipedia.org/wiki/Android_Froyo"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="externo"
-                >Froyo</a
-              >
-            </li>
-            <li>
-              2.3 -
-              <a
-                href="https://pt.wikipedia.org/wiki/Android_Gingerbread"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="externo"
-                >Gingerbread</a
-              >
-            </li>
-            <li>
-              3.0 -
-              <a
-                href="https://pt.wikipedia.org/wiki/Android_Honeycomb"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="externo"
-                >Honeycomb</a
-              >
-            </li>
-            <li>
-              4.0 -
-              <a
-                href="https://pt.wikipedia.org/wiki/Android_Ice_Cream_Sandwich"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="externo"
-                >Ice Cream Sandwich</a
-              >
-            </li>
-            <li>
-              4.1 -
-              <a
-                href="https://pt.wikipedia.org/wiki/Android_Jelly_Bean"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="externo"
-                >Jelly Bean</a
-              >
-            </li>
-            <li>
-              4.4 -
-              <a
-                href="https://pt.wikipedia.org/wiki/Android_KitKat"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="externo"
-                >KitKat</a
-              >
-            </li>
-            <li>
-              5.0 -
-              <a
-                href="https://pt.wikipedia.org/wiki/Android_Lollipop"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="externo"
-                >Lollipop</a
-              >
-            </li>
-            <li>
-              6.0 -
-              <a
-                href="https://pt.wikipedia.org/wiki/Android_Marshmallow"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="externo"
-                >Marshmallow</a
-              >
-            </li>
-            <li>
-              7.0 -
-              <a
-                href="https://pt.wikipedia.org/wiki/Android_Nougat"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="externo"
-                >Nougat</a
-              >
-            </li>
-            <li>
-              8.0 -
-              <a
-                href="https://pt.wikipedia.org/wiki/Android_Oreo"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="externo"
-                >Oreo</a
-              >
-            </li>
-            <li>
-              9.0 -
-              <a
-                href="https://pt.wikipedia.org/wiki/Android_Pie"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="externo"
-                >Pie</a
-              >
-            </li>
-          </ul>
+
+          <h3>A primeira tentativa (spoiler: deu ruim)</h3>
           <p>
-            Depois disso, o Google ficou fit e resolveu parar com a zoeira dos
-            doces, usando só números nas versões. Mas a tradição ficou na
-            memória dos fãs.
-          </p>
-          <p>
-            Quer ver a linha do tempo completa? Acesse o
+            Tudo começou lá em 2007, quando um engenheiro do Google, o
+            <strong>Dan Morrill</strong>, decidiu que o Android precisava de um
+            mascote. Só que ninguém tinha pedido isso oficialmente. O Dan
+            simplesmente abriu o
             <a
-              href="https://www.android.com/intl/en_uk/history/"
+              href="https://inkscape.org/pt-br/"
               target="_blank"
               rel="noopener noreferrer"
               class="externo"
-              >Android History</a
-            >.
+              >Inkscape</a
+            >
+            (um editor de imagens open-source) e, no melhor estilo “deixa que eu
+            faço”, criou uns robozinhos meio esquisitos.
           </p>
-        </aside>
 
-        <p>
-          Então é isso! Agora você já pode dizer que conhece a verdadeira origem
-          do robozinho verde mais famoso do mundo mobile. Curtiu? Compartilha
-          com a galera geek!
-        </p>
-      </section>
+          <p>
+            O resultado? Bem... eles ficaram tão bizarros que ganharam um
+            apelido carinhoso: <strong>Dandroids</strong>. Era só pra ser uma
+            brincadeira com a equipe, mas olha, poderia ter dado ruim se fosse
+            oficial.
+          </p>
+
+          <h3>Hora de chamar os adultos (e uma designer de verdade)</h3>
+          <p>
+            Como o projeto do Android começou a ganhar corpo, o pessoal resolveu
+            levar a ideia de mascote a sério. A missão foi dada à ilustradora
+            russa
+            <a
+              href="https://www.irinablok.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="externo"
+              >Irina Blok</a
+            >, também funcionária do <strong>Google</strong>.
+          </p>
+
+          <picture>
+            <source
+              media="(max-width: 670px)"
+              srcset="/assets/imagens/noticias/irina-blok-pq.jpg"
+              loading="lazy"
+              class="img-irina"
+            />
+            <img
+              src="/assets/imagens/noticias/irina-blok.jpg"
+              alt="Irina Blok, criadora do Bugdroid"
+              loading="lazy"
+              class="img-irina"
+            />
+          </picture>
+
+          <p>
+            A Irina queria algo simples, que qualquer pessoa pudesse reconhecer
+            à primeira vista. E aí vem a parte mais inusitada da história: a
+            inspiração pro <strong>Bugdroid</strong> veio das plaquinhas de
+            banheiro — sim, aquelas figurinhas minimalistas que mostram se é
+            masculino ou feminino.
+          </p>
+
+          <img
+            src="/assets/imagens/noticias/bugdroid.png"
+            alt="Bugdroid"
+            loading="lazy"
+            class="bugdroid"
+          />
+
+          <p>
+            Com poucos traços e um visual "chapadinho", nasceu o
+            <strong>Bugdroid</strong>, o robozinho que hoje é praticamente o
+            "rosto" do Android.
+          </p>
+
+          <h3>Simplicidade é a chave</h3>
+          <p>
+            O sucesso do Bugdroid veio justamente do seu visual simples, limpo e
+            amigável. Ele virou um personagem altamente personalizável, e o
+            resto é história. Hoje ele aparece de todo jeito: ninja, astronauta,
+            com fantasia de cupcake, ou simplesmente curtindo uma vibe casual.
+          </p>
+
+          <div class="video-container">
+            <iframe
+              class="iframe-video"
+              src="https://www.youtube-nocookie.com/embed/l2UDgpLz20M"
+              title="A próxima evolução do Android"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <aside>
+            <h3>Sabia que o Android já teve versões com nome de doce?</h3>
+            <p>
+              Se você acha que só o Bugdroid tem uma história divertida, segura
+              essa: até a versão 9.0, cada lançamento do Android tinha nome de
+              sobremesa, seguindo a ordem do alfabeto. Era tipo um buffet de
+              novidades. Quer ver?
+            </p>
+            <ul>
+              <li>
+                1.5 -
+                <a
+                  href="https://pt.wikipedia.org/wiki/Android_Cupcake"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="externo"
+                  >Cupcake</a
+                >
+              </li>
+              <li>
+                1.6 -
+                <a
+                  href="https://pt.wikipedia.org/wiki/Android_Donut"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="externo"
+                  >Donut</a
+                >
+              </li>
+              <li>
+                2.0 -
+                <a
+                  href="https://pt.wikipedia.org/wiki/Android_Eclair"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="externo"
+                  >Eclair</a
+                >
+              </li>
+              <li>
+                2.2 -
+                <a
+                  href="https://pt.wikipedia.org/wiki/Android_Froyo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="externo"
+                  >Froyo</a
+                >
+              </li>
+              <li>
+                2.3 -
+                <a
+                  href="https://pt.wikipedia.org/wiki/Android_Gingerbread"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="externo"
+                  >Gingerbread</a
+                >
+              </li>
+              <li>
+                3.0 -
+                <a
+                  href="https://pt.wikipedia.org/wiki/Android_Honeycomb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="externo"
+                  >Honeycomb</a
+                >
+              </li>
+              <li>
+                4.0 -
+                <a
+                  href="https://pt.wikipedia.org/wiki/Android_Ice_Cream_Sandwich"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="externo"
+                  >Ice Cream Sandwich</a
+                >
+              </li>
+              <li>
+                4.1 -
+                <a
+                  href="https://pt.wikipedia.org/wiki/Android_Jelly_Bean"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="externo"
+                  >Jelly Bean</a
+                >
+              </li>
+              <li>
+                4.4 -
+                <a
+                  href="https://pt.wikipedia.org/wiki/Android_KitKat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="externo"
+                  >KitKat</a
+                >
+              </li>
+              <li>
+                5.0 -
+                <a
+                  href="https://pt.wikipedia.org/wiki/Android_Lollipop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="externo"
+                  >Lollipop</a
+                >
+              </li>
+              <li>
+                6.0 -
+                <a
+                  href="https://pt.wikipedia.org/wiki/Android_Marshmallow"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="externo"
+                  >Marshmallow</a
+                >
+              </li>
+              <li>
+                7.0 -
+                <a
+                  href="https://pt.wikipedia.org/wiki/Android_Nougat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="externo"
+                  >Nougat</a
+                >
+              </li>
+              <li>
+                8.0 -
+                <a
+                  href="https://pt.wikipedia.org/wiki/Android_Oreo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="externo"
+                  >Oreo</a
+                >
+              </li>
+              <li>
+                9.0 -
+                <a
+                  href="https://pt.wikipedia.org/wiki/Android_Pie"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="externo"
+                  >Pie</a
+                >
+              </li>
+            </ul>
+            <p>
+              Depois disso, o Google ficou fit e resolveu parar com a zoeira dos
+              doces, usando só números nas versões. Mas a tradição ficou na
+              memória dos fãs.
+            </p>
+            <p>
+              Quer ver a linha do tempo completa? Acesse o
+              <a
+                href="https://www.android.com/intl/en_uk/history/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="externo"
+                >Android History</a
+              >.
+            </p>
+          </aside>
+
+          <p>
+            Então é isso! Agora você já pode dizer que conhece a verdadeira
+            origem do robozinho verde mais famoso do mundo mobile. Curtiu?
+            Compartilha com a galera geek!
+          </p>
+        </section>
+      </article>
     </main>
-    <section class="newsletter" aria-labelledby="newsletter-title">
+    <section class="newsletter-section" aria-labelledby="newsletter-title">
       <div class="newsletter-container">
         <h2 id="newsletter-title" class="newsletter-container-title">
           Assine nossa Newsletter
@@ -445,13 +471,13 @@
                 <a href="/index.html">Início</a>
               </li>
               <li>
-                <a href="/pages/sobre.html">Sobre</a>
+                <a href="sobre.html">Sobre</a>
               </li>
               <li>
-                <a href="/pages/contato.html">Contato</a>
+                <a href="contato.html">Contato</a>
               </li>
               <li>
-                <a href="/pages/privacidade.html">Política de Privacidade</a>
+                <a href="privacidade.html">Política de Privacidade</a>
               </li>
             </ul>
           </div>
@@ -480,6 +506,7 @@
       </div>
     </footer>
   </body>
-  <script src="/js/filtro-busca.js"></script>
+  <div class="menu-open-overlay"></div>
   <script src="/js/ui.js"></script>
+  <script src="/js/filtro-busca.js"></script>
 </html>

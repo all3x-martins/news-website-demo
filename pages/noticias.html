@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/css/responsive.css" />
     <link
       rel="shortcut icon"
-      href="/assets/imagens/favicon/favicon.ico"
+      href="/assets/icons/favicon/favicon.ico"
       type="image/x-icon"
     />
     <link
@@ -40,14 +40,35 @@
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
             />
-            <li><a href="/index.html">Início</a></li>
-            <li><a href="/pages/noticias.html">Notícias</a></li>
-            <li><a href="#">Android</a></li>
-            <li><a href="#">Inteligência Artificial</a></li>
-            <li><a href="#">Desenvolvimento</a></li>
-            <li><a href="#">Tutoriais</a></li>
-            <li><a href="#">Software</a></li>
-            <li><a href="/pages/contato.html">Contato</a></li>
+            <li class="menu-item">
+              <i class="fa-solid fa-house"></i> <a href="/index.html">Início</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-newspaper"></i>
+              <a href="noticias.html">Notícias</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-brands fa-android"></i> <a href="#">Android</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-brain"></i>
+              <a href="#">Inteligência Artificial</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-code"></i> <a href="#">Desenvolvimento</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <a href="#">Tutoriais</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-laptop"></i>
+              <a href="#">Software</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-message"></i>
+              <a href="contato.html">Contato</a>
+            </li>
           </ul>
           <a href="/index.html"
             ><img
@@ -68,7 +89,7 @@
           class="main-nav d-flex"
         >
           <a href="/index.html" class="main-nav-link">Início</a>
-          <a href="/pages/noticias.html" class="main-nav-link">Notícias</a>
+          <a href="noticias.html" class="main-nav-link">Notícias</a>
           <div class="dropdown" id="dropdown-categorias">
             <span id="dropdown-toggle" class="dropdown-toggle d-flex"
               >Categorias <i class="fa fa-caret-down"></i
@@ -86,7 +107,7 @@
               <li><a href="#" class="dropdown-content-link">Tutoriais</a></li>
             </ul>
           </div>
-          <a href="/pages/contato.html" class="main-nav-link">Contato</a>
+          <a href="contato.html" class="main-nav-link">Contato</a>
         </nav>
         <button class="search-toggle-mobile">
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -335,13 +356,13 @@
                 <a href="/index.html">Início</a>
               </li>
               <li>
-                <a href="/pages/sobre.html">Sobre</a>
+                <a href="sobre.html">Sobre</a>
               </li>
               <li>
-                <a href="/pages/contato.html">Contato</a>
+                <a href="contato.html">Contato</a>
               </li>
               <li>
-                <a href="/pages/privacidade.html">Política de Privacidade</a>
+                <a href="privacidade.html">Política de Privacidade</a>
               </li>
             </ul>
           </div>
@@ -369,7 +390,8 @@
         </div>
       </div>
     </footer>
-    <script src="/js/filtro-busca.js"></script>
+    <div class="menu-open-overlay"></div>
     <script src="/js/ui.js"></script>
+    <script src="/js/filtro-busca.js"></script>
   </body>
 </html>

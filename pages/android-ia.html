@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
-    <link rel="icon" href="/assets/imagens/favicon/favicon.ico" />
+    <link rel="icon" href="/assets/icons/favicon/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -36,14 +36,35 @@
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
             />
-            <li><a href="/index.html">Início</a></li>
-            <li><a href="/pages/noticias.html">Notícias</a></li>
-            <li><a href="#">Android</a></li>
-            <li><a href="#">Inteligência Artificial</a></li>
-            <li><a href="#">Desenvolvimento</a></li>
-            <li><a href="#">Tutoriais</a></li>
-            <li><a href="#">Software</a></li>
-            <li><a href="/pages/contato.html">Contato</a></li>
+            <li class="menu-item">
+              <i class="fa-solid fa-house"></i> <a href="/index.html">Início</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-newspaper"></i>
+              <a href="noticias.html">Notícias</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-brands fa-android"></i> <a href="#">Android</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-brain"></i>
+              <a href="#">Inteligência Artificial</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-code"></i> <a href="#">Desenvolvimento</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <a href="#">Tutoriais</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-laptop"></i>
+              <a href="#">Software</a>
+            </li>
+            <li class="menu-item">
+              <i class="fa-solid fa-message"></i>
+              <a href="contato.html">Contato</a>
+            </li>
           </ul>
           <a href="/index.html"
             ><img
@@ -64,7 +85,7 @@
           class="main-nav d-flex"
         >
           <a href="/index.html" class="main-nav-link">Início</a>
-          <a href="/pages/noticias.html" class="main-nav-link">Notícias</a>
+          <a href="noticias.html" class="main-nav-link">Notícias</a>
           <div class="dropdown" id="dropdown-categorias">
             <span id="dropdown-toggle" class="dropdown-toggle d-flex"
               >Categorias <i class="fa fa-caret-down"></i
@@ -82,7 +103,7 @@
               <li><a href="#" class="dropdown-content-link">Tutoriais</a></li>
             </ul>
           </div>
-          <a href="/pages/contato.html" class="main-nav-link">Contato</a>
+          <a href="contato.html" class="main-nav-link">Contato</a>
         </nav>
         <button class="search-toggle-mobile">
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -95,109 +116,110 @@
         </button>
       </form>
     </header>
-    <main class="conteudo-noticia">
-      <a
-        href="noticias.html"
-        class="voltar-noticias"
-        aria-label="Voltar para a listagem de notícias"
-      >
-        ← Voltar para notícias
-      </a>
-
-      <header>
-        <h1>Android + IA = match perfeito?</h1>
-        <h2>
-          Descubra como o Android está se reinventando com inteligência
-          artificial para oferecer experiências mais personalizadas e proativas
-          no seu dia a dia.
-        </h2>
-        <time class="data-publicacao" datetime="2025-08-03"
-          >Publicado em 03/08/2025</time
+    <main class="main-content">
+      <article class="conteudo-noticia">
+        <a
+          href="noticias.html"
+          class="voltar-noticias"
+          aria-label="Voltar para a listagem de notícias"
         >
-        <img
-          src="/assets/imagens/noticias/Android-e-ia-parceria-para-o-futuro.png"
-          alt="Imagem conceitual de Android e Inteligência Artificial"
-          class="capa-noticia"
-          loading="lazy"
-        />
-      </header>
+          ← Voltar para notícias
+        </a>
 
-      <section>
-        <p>
-          Se você acha que o Android já faz muita coisa sozinho, é porque ainda
-          não viu nada! A inteligência artificial (IA) está virando a chave e
-          transformando seu smartphone em um verdadeiro assistente pessoal — e
-          não, não estamos falando só da Google Assistente dizendo a previsão do
-          tempo.
-        </p>
+        <header>
+          <h1>Android + IA = match perfeito?</h1>
+          <h2>
+            Descubra como o Android está se reinventando com inteligência
+            artificial para oferecer experiências mais personalizadas e
+            proativas no seu dia a dia.
+          </h2>
+          <time class="data-publicacao" datetime="2025-08-03"
+            >Publicado em 03/08/2025</time
+          >
+          <img
+            src="/assets/imagens/noticias/Android-e-ia-parceria-para-o-futuro.png"
+            alt="Imagem conceitual de Android e Inteligência Artificial"
+            class="capa-noticia"
+            loading="lazy"
+          />
+        </header>
 
-        <h3>Seu Android já te entende (e vai te entender ainda mais)</h3>
-        <p>
-          A IA está sendo integrada diretamente no coração do Android, tornando
-          o sistema mais inteligente a cada toque. Desde sugestões de respostas
-          rápidas nas notificações até a personalização do brilho e consumo de
-          bateria com base nos seus hábitos, o Android está aprendendo com você.
-        </p>
-        <p>
-          Quer um exemplo prático? Imagine seu aparelho sugerindo abrir o
-          Spotify assim que você conecta os fones, ou mostrando atalhos para
-          apps de delivery exatamente na hora do almoço. Isso não é mágica, é IA
-          trabalhando nos bastidores.
-        </p>
+        <section>
+          <p>
+            Se você acha que o Android já faz muita coisa sozinho, é porque
+            ainda não viu nada! A inteligência artificial (IA) está virando a
+            chave e transformando seu smartphone em um verdadeiro assistente
+            pessoal — e não, não estamos falando só da Google Assistente dizendo
+            a previsão do tempo.
+          </p>
 
-        <h3>Fotos melhores sem esforço? IA faz acontecer</h3>
-        <p>
-          A câmera do seu smartphone já é uma prova viva dessa revolução.
-          Funções como o Modo Noturno, Remoção de Objetos e até mesmo a
-          reconstrução de imagens borradas são movidas por algoritmos de IA que
-          analisam a cena e otimizam cada detalhe em tempo real.
-        </p>
-        <p>
-          E não para por aí: o Google Lens, aquele recurso que escaneia e
-          reconhece textos, produtos e até plantas, está evoluindo para se
-          tornar um verdadeiro “superpoder” no seu bolso.
-        </p>
+          <h3>Seu Android já te entende (e vai te entender ainda mais)</h3>
+          <p>
+            A IA está sendo integrada diretamente no coração do Android,
+            tornando o sistema mais inteligente a cada toque. Desde sugestões de
+            respostas rápidas nas notificações até a personalização do brilho e
+            consumo de bateria com base nos seus hábitos, o Android está
+            aprendendo com você.
+          </p>
+          <p>
+            Quer um exemplo prático? Imagine seu aparelho sugerindo abrir o
+            Spotify assim que você conecta os fones, ou mostrando atalhos para
+            apps de delivery exatamente na hora do almoço. Isso não é mágica, é
+            IA trabalhando nos bastidores.
+          </p>
 
-        <h3>Privacidade? Android e IA juntos nessa missão</h3>
-        <p>
-          Mas calma, nem só de conveniência vive a IA. O Android está
-          implementando recursos de aprendizado de máquina diretamente no
-          dispositivo (on-device AI), garantindo que seus dados pessoais não
-          precisem ser enviados para servidores na nuvem o tempo todo.
-        </p>
-        <p>
-          Isso significa mais privacidade, menos consumo de internet e uma
-          resposta mais rápida às suas necessidades.
-        </p>
+          <h3>Fotos melhores sem esforço? IA faz acontecer</h3>
+          <p>
+            A câmera do seu smartphone já é uma prova viva dessa revolução.
+            Funções como o Modo Noturno, Remoção de Objetos e até mesmo a
+            reconstrução de imagens borradas são movidas por algoritmos de IA
+            que analisam a cena e otimizam cada detalhe em tempo real.
+          </p>
+          <p>
+            E não para por aí: o Google Lens, aquele recurso que escaneia e
+            reconhece textos, produtos e até plantas, está evoluindo para se
+            tornar um verdadeiro “superpoder” no seu bolso.
+          </p>
 
-        <div class="citacao-destaque">
-          “O futuro do Android não é apenas mais inteligente. É mais pessoal,
-          mais seguro e mais conectado à sua rotina.”
-        </div>
+          <h3>Privacidade? Android e IA juntos nessa missão</h3>
+          <p>
+            Mas calma, nem só de conveniência vive a IA. O Android está
+            implementando recursos de aprendizado de máquina diretamente no
+            dispositivo (on-device AI), garantindo que seus dados pessoais não
+            precisem ser enviados para servidores na nuvem o tempo todo.
+          </p>
+          <p>
+            Isso significa mais privacidade, menos consumo de internet e uma
+            resposta mais rápida às suas necessidades.
+          </p>
 
-        <h3>E o futuro? IA + Android = Automação total</h3>
-        <p>
-          Com o avanço da IA generativa, podemos esperar que o Android ajude a
-          criar respostas personalizadas em tempo real, resuma seus e-mails e
-          até sugira ações automáticas baseadas no seu contexto. Imagine um
-          sistema que sabe quando você está no trabalho e ajusta suas
-          notificações, ou que silencia seu celular durante uma reunião sem você
-          precisar tocar em nada.
-        </p>
-        <p>
-          O match entre Android e IA já está acontecendo, e a tendência é que
-          essa parceria fique ainda mais afinada nos próximos anos.
-        </p>
+          <div class="citacao-destaque">
+            “O futuro do Android não é apenas mais inteligente. É mais pessoal,
+            mais seguro e mais conectado à sua rotina.”
+          </div>
 
-        <p>
-          E aí, pronto para um smartphone que te entende melhor do que ninguém?
-        </p>
-      </section>
+          <h3>E o futuro? IA + Android = Automação total</h3>
+          <p>
+            Com o avanço da IA generativa, podemos esperar que o Android ajude a
+            criar respostas personalizadas em tempo real, resuma seus e-mails e
+            até sugira ações automáticas baseadas no seu contexto. Imagine um
+            sistema que sabe quando você está no trabalho e ajusta suas
+            notificações, ou que silencia seu celular durante uma reunião sem
+            você precisar tocar em nada.
+          </p>
+          <p>
+            O match entre Android e IA já está acontecendo, e a tendência é que
+            essa parceria fique ainda mais afinada nos próximos anos.
+          </p>
+
+          <p>
+            E aí, pronto para um smartphone que te entende melhor do que
+            ninguém?
+          </p>
+        </section>
+      </article>
     </main>
-    <section
-      class="newsletter newsletter-section"
-      aria-labelledby="newsletter-title"
-    >
+    <section class="newsletter-section" aria-labelledby="newsletter-title">
       <div class="newsletter-container">
         <h2 id="newsletter-title" class="newsletter-container-title">
           Assine nossa Newsletter
@@ -235,7 +257,7 @@
           <div class="footer-section">
             <img
               class="logo-footer"
-              src="/assets/imagens/logos/logo.png"
+              src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
             />
             <p>
@@ -250,13 +272,13 @@
                 <a href="/index.html">Início</a>
               </li>
               <li>
-                <a href="/pages/sobre.html">Sobre</a>
+                <a href="sobre.html">Sobre</a>
               </li>
               <li>
-                <a href="/pages/contato.html">Contato</a>
+                <a href="contato.html">Contato</a>
               </li>
               <li>
-                <a href="/pages/privacidade.html">Política de Privacidade</a>
+                <a href="privacidade.html">Política de Privacidade</a>
               </li>
             </ul>
           </div>
@@ -284,7 +306,8 @@
         </div>
       </div>
     </footer>
-    <script src="/js/filtro-busca.js"></script>
+    <div class="menu-open-overlay"></div>
     <script src="/js/ui.js"></script>
+    <script src="/js/filtro-busca.js"></script>
   </body>
 </html>
