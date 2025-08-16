@@ -32,7 +32,7 @@ Portal de notícias sobre tecnologia, inovação e tendências do universo Andro
    ```bash
    git clone https://github.com/all3x-martins/blog-tech-explorer.git
    ```
-2. Abra `index.html` no navegador ou acesse [online](https://all3x-martins.github.io/blog-tech-explorer).
+2. Abra `index.html` no navegador ou acesse [online](https://blog-tech-explorer.vercel.app/).
 3. Explore as funcionalidades.
 
 ## 📷 Captura de Tela
