@@ -11,12 +11,13 @@
       name="keywords"
       content="Android, inteligência artificial, IA, desenvolvimento móvel, tecnologia"
     />
+    <meta name="robots" content="index, follow" />
     <meta name="author" content="Tech Explorer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
-    <link rel="icon" href="/assets/icons/favicon/favicon.ico" />
+    <link rel="icon" href="/assets/icons/favicon/favicon.ico" loading="lazy" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -35,6 +36,7 @@
               class="menu-logo"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
+              loading="lazy"
             />
             <li class="menu-item">
               <i class="fa-solid fa-house"></i> <a href="/index.html">Início</a>
@@ -68,9 +70,11 @@
           </ul>
           <a href="/index.html"
             ><img
+              loading="lazy"
               class="menu-logo"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
+              loading="lazy"
           /></a>
         </div>
         <form class="search-form" id="search-form">
@@ -127,8 +131,8 @@
         </a>
 
         <header>
-          <h1>Android + IA = match perfeito?</h1>
-          <h2>
+          <h1 class="title">Android + IA = match perfeito?</h1>
+          <h2 class="subtitle">
             Descubra como o Android está se reinventando com inteligência
             artificial para oferecer experiências mais personalizadas e
             proativas no seu dia a dia.
@@ -153,7 +157,9 @@
             a previsão do tempo.
           </p>
 
-          <h3>Seu Android já te entende (e vai te entender ainda mais)</h3>
+          <h3 class="article-h3 padding-bottom">
+            Seu Android já te entende (e vai te entender ainda mais)
+          </h3>
           <p>
             A IA está sendo integrada diretamente no coração do Android,
             tornando o sistema mais inteligente a cada toque. Desde sugestões de
@@ -168,7 +174,9 @@
             IA trabalhando nos bastidores.
           </p>
 
-          <h3>Fotos melhores sem esforço? IA faz acontecer</h3>
+          <h3 class="article-h3 padding-bottom">
+            Fotos melhores sem esforço? IA faz acontecer
+          </h3>
           <p>
             A câmera do seu smartphone já é uma prova viva dessa revolução.
             Funções como o Modo Noturno, Remoção de Objetos e até mesmo a
@@ -181,7 +189,9 @@
             tornar um verdadeiro “superpoder” no seu bolso.
           </p>
 
-          <h3>Privacidade? Android e IA juntos nessa missão</h3>
+          <h3 class="article-h3 padding-bottom">
+            Privacidade? Android e IA juntos nessa missão
+          </h3>
           <p>
             Mas calma, nem só de conveniência vive a IA. O Android está
             implementando recursos de aprendizado de máquina diretamente no
@@ -198,7 +208,9 @@
             mais seguro e mais conectado à sua rotina.”
           </div>
 
-          <h3>E o futuro? IA + Android = Automação total</h3>
+          <h3 class="article-h3 padding-bottom">
+            E o futuro? IA + Android = Automação total
+          </h3>
           <p>
             Com o avanço da IA generativa, podemos esperar que o Android ajude a
             criar respostas personalizadas em tempo real, resuma seus e-mails e
@@ -228,7 +240,7 @@
           Receba as principais notícias e novidades sobre Android e tecnologia
           diretamente no seu e-mail.
         </p>
-        <form class="newsletter-form d-flex justify-center" autocomplete="off">
+        <form class="newsletter-form d-flex justify-center">
           <label for="newsletter-email" class="sr-only">E-mail</label>
           <input
             id="newsletter-email"
@@ -259,6 +271,7 @@
               class="logo-footer"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
+              loading="lazy"
             />
             <p>
               Seu portal de notícias sobre tecnologia, inovação e tendências do
@@ -294,10 +307,18 @@
           <div class="footer-section">
             <h4 class="footer-section-title">Siga-nos</h4>
             <div class="footer-social">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a aria-label="Instagram" href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a aria-label="Twitter" href="#"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a aria-label="Facebook" href="#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a aria-label="LinkedIn" href="#"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
           </div>
         </div>

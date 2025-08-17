@@ -11,12 +11,13 @@
       name="keywords"
       content="Bugdroid, Android, mascote, história, tecnologia móvel"
     />
+    <meta name="robots" content="index, follow" />
     <meta name="author" content="Tech Explorer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
-    <link rel="icon" href="/assets/icons/favicon/favicon.ico" />
+    <link rel="icon" href="/assets/icons/favicon/favicon.ico" loading="lazy" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -35,6 +36,7 @@
               class="menu-logo"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
+              loading="lazy"
             />
             <li class="menu-item">
               <i class="fa-solid fa-house"></i> <a href="/index.html">Início</a>
@@ -71,6 +73,7 @@
               class="menu-logo"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
+              loading="lazy"
           /></a>
         </div>
         <form class="search-form" id="search-form">
@@ -127,8 +130,10 @@
         </a>
 
         <header>
-          <h1>Bugdroid raiz: a origem do robozinho verde</h1>
-          <h2>
+          <h1 class="title padding-bottom">
+            Bugdroid raiz: a origem do robozinho verde
+          </h1>
+          <h2 class="subtitle">
             A história por trás do mascote do Android e sua evolução até se
             tornar um ícone global.
           </h2>
@@ -151,7 +156,9 @@
             mundial.
           </p>
 
-          <h3>A primeira tentativa (spoiler: deu ruim)</h3>
+          <h3 class="article-h3 padding-bottom">
+            A primeira tentativa (spoiler: deu ruim)
+          </h3>
           <p>
             Tudo começou lá em 2007, quando um engenheiro do Google, o
             <strong>Dan Morrill</strong>, decidiu que o Android precisava de um
@@ -175,7 +182,9 @@
             oficial.
           </p>
 
-          <h3>Hora de chamar os adultos (e uma designer de verdade)</h3>
+          <h3 class="article-h3 padding-bottom">
+            Hora de chamar os adultos (e uma designer de verdade)
+          </h3>
           <p>
             Como o projeto do Android começou a ganhar corpo, o pessoal resolveu
             levar a ideia de mascote a sério. A missão foi dada à ilustradora
@@ -225,7 +234,7 @@
             "rosto" do Android.
           </p>
 
-          <h3>Simplicidade é a chave</h3>
+          <h3 class="article-h3 padding-bottom">Simplicidade é a chave</h3>
           <p>
             O sucesso do Bugdroid veio justamente do seu visual simples, limpo e
             amigável. Ele virou um personagem altamente personalizável, e o
@@ -244,7 +253,9 @@
           </div>
 
           <aside>
-            <h3>Sabia que o Android já teve versões com nome de doce?</h3>
+            <h3 class="article-h3 padding-bottom">
+              Sabia que o Android já teve versões com nome de doce?
+            </h3>
             <p>
               Se você acha que só o Bugdroid tem uma história divertida, segura
               essa: até a versão 9.0, cada lançamento do Android tinha nome de
@@ -427,7 +438,7 @@
           Receba as principais notícias e novidades sobre Android e tecnologia
           diretamente no seu e-mail.
         </p>
-        <form class="newsletter-form d-flex justify-center" autocomplete="off">
+        <form class="newsletter-form d-flex justify-center">
           <label for="newsletter-email" class="sr-only">E-mail</label>
           <input
             id="newsletter-email"
@@ -458,6 +469,7 @@
               class="logo-footer"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
+              loading="lazy"
             />
             <p>
               Seu portal de notícias sobre tecnologia, inovação e tendências do
@@ -493,10 +505,18 @@
           <div class="footer-section">
             <h4 class="footer-section-title">Siga-nos</h4>
             <div class="footer-social">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a aria-label="Instagram" href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a aria-label="Twitter" href="#"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a aria-label="Facebook" href="#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a aria-label="LinkedIn" href="#"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -505,8 +525,8 @@
         </div>
       </div>
     </footer>
+    <div class="menu-open-overlay"></div>
+    <script src="/js/ui.js"></script>
+    <script src="/js/filtro-busca.js"></script>
   </body>
-  <div class="menu-open-overlay"></div>
-  <script src="/js/ui.js"></script>
-  <script src="/js/filtro-busca.js"></script>
 </html>

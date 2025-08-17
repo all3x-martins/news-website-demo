@@ -8,8 +8,12 @@
       content="As principais notícias sobre tecnologia e Android em um só lugar."
     />
     <meta name="keywords" content="Android, Tecnologia, Notícias, Inovação" />
+    <meta name="robots" content="index, follow" />
     <meta name="author" content="Tech Explorer" />
-    <title>Tech Explorer - Suas notícias de tecnologia</title>
+    <title>
+      Tech Explorer - As principais notícias sobre tecnologia e Android em um só
+      lugar
+    </title>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
@@ -17,6 +21,7 @@
       rel="shortcut icon"
       href="/assets/icons/favicon/favicon.ico"
       type="image/x-icon"
+      loading="lazy"
     />
     <link
       rel="stylesheet"
@@ -36,6 +41,7 @@
               class="menu-logo"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
+              loading="lazy"
             />
             <li class="menu-item">
               <i class="fa-solid fa-house"></i> <a href="index.html">Início</a>
@@ -237,7 +243,7 @@
           Receba as principais notícias e novidades sobre Android e tecnologia
           diretamente no seu e-mail.
         </p>
-        <form class="newsletter-form d-flex justify-center" autocomplete="off">
+        <form class="newsletter-form d-flex justify-center">
           <label for="newsletter-email" class="sr-only">E-mail</label>
           <input
             id="newsletter-email"
@@ -268,6 +274,7 @@
               class="logo-footer"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
+              loading="lazy"
             />
             <p>
               Seu portal de notícias sobre tecnologia, inovação e tendências do
@@ -303,10 +310,18 @@
           <div class="footer-section">
             <h4 class="footer-section-title">Siga-nos</h4>
             <div class="footer-social">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a aria-label="Instagram" href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a aria-label="Twitter" href="#"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a aria-label="Facebook" href="#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a aria-label="LinkedIn" href="#"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
           </div>
         </div>

@@ -16,6 +16,7 @@
       rel="shortcut icon"
       href="/assets/icons/favicon/favicon.ico"
       type="image/x-icon"
+      loading="lazy"
     />
     <title>Resultados da Busca - Tech Explorer</title>
     <link rel="stylesheet" href="/css/base.css" />
@@ -39,6 +40,7 @@
               class="menu-logo"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
+              loading="lazy"
             />
             <li class="menu-item">
               <i class="fa-solid fa-house"></i> <a href="/index.html">Início</a>
@@ -75,6 +77,7 @@
               class="menu-logo"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
+              loading="lazy"
           /></a>
         </div>
         <form class="search-form" id="search-form">
@@ -137,7 +140,7 @@
           Receba as principais notícias e novidades sobre Android e tecnologia
           diretamente no seu e-mail.
         </p>
-        <form class="newsletter-form d-flex justify-center" autocomplete="off">
+        <form class="newsletter-form d-flex justify-center">
           <label for="newsletter-email" class="sr-only">E-mail</label>
           <input
             id="newsletter-email"
@@ -168,6 +171,7 @@
               class="logo-footer"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
+              loading="lazy"
             />
             <p>
               Seu portal de notícias sobre tecnologia, inovação e tendências do
@@ -197,10 +201,18 @@
           <div class="footer-section">
             <h4>Siga-nos</h4>
             <div class="footer-social">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a aria-label="Instagram" href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a aria-label="Twitter" href="#"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a aria-label="Facebook" href="#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a aria-label="LinkedIn" href="#"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -274,7 +286,7 @@
       });
     </script>
     <div class="menu-open-overlay"></div>
+    <script src="/js/ui.js"></script>
+    <script src="/js/filtro-busca.js"></script>
   </body>
-  <script src="/js/ui.js"></script>
-  <script src="/js/filtro-busca.js"></script>
 </html>

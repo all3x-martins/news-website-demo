@@ -11,11 +11,13 @@
       name="keywords"
       content="Android 15, inteligência artificial, segurança, tecnologia móvel"
     />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Tech Explorer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
-    <link rel="icon" href="/assets/icons/favicon/favicon.ico" />
+    <link rel="icon" href="/assets/icons/favicon/favicon.ico" loading="lazy" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -116,7 +118,7 @@
       </form>
     </header>
     <main class="main-content">
-      <article class="conteudo-noticia">
+      <article role="article" class="conteudo-noticia">
         <a
           href="noticias.html"
           class="voltar-noticias"
@@ -126,11 +128,11 @@
         </a>
 
         <header>
-          <h1>
+          <h1 class="title padding-bottom">
             Android 15 inaugura nova era de inteligência artificial e
             privacidade
           </h1>
-          <h2>
+          <h2 class="subtitle">
             Google revela recursos que transformam a experiência do usuário com
             foco em segurança e automação inteligente.
           </h2>
@@ -158,14 +160,16 @@
             da experiência Android."
           </blockquote>
 
-          <h3>Recursos de IA Personalizada</h3>
+          <h3 class="article-h3 padding-bottom">
+            Recursos de IA Personalizada
+          </h3>
           <p>
             Entre as novidades, destacam-se assistentes contextuais mais
             inteligentes e integrações com dispositivos IoT, oferecendo
             automações adaptativas ao perfil do usuário.
           </p>
 
-          <h3>Segurança Reforçada</h3>
+          <h3 class="article-h3 padding-bottom">Segurança Reforçada</h3>
           <p>
             O Android 15 adota novas camadas de criptografia e controles de
             permissão dinâmicos, garantindo mais transparência e proteção contra
@@ -177,7 +181,9 @@
             um ecossistema onde a IA atua como guardiã da privacidade."
           </blockquote>
 
-          <h3>Integração com Dispositivos IoT</h3>
+          <h3 class="article-h3 padding-bottom">
+            Integração com Dispositivos IoT
+          </h3>
           <p>
             O Android 15 trará integração nativa com dispositivos inteligentes,
             permitindo que smartphones gerenciem rotinas domésticas com mais
@@ -186,7 +192,7 @@
             segurança.
           </p>
 
-          <h3>Interface Renovada</h3>
+          <h3 class="article-h3 padding-bottom">Interface Renovada</h3>
           <p>
             Além das melhorias técnicas, o Android 15 apresenta uma interface
             mais limpa e intuitiva, com novos elementos visuais focados em
@@ -195,7 +201,7 @@
             dobráveis.
           </p>
 
-          <h3>Conclusão</h3>
+          <h3 class="article-h3 padding-bottom">Conclusão</h3>
           <p>
             Com essa atualização, o Google posiciona o Android 15 como uma
             plataforma de referência em inovação, unindo inteligência artificial
@@ -215,7 +221,7 @@
           Receba as principais notícias e novidades sobre Android e tecnologia
           diretamente no seu e-mail.
         </p>
-        <form class="newsletter-form d-flex justify-center" autocomplete="off">
+        <form class="newsletter-form d-flex justify-center">
           <label for="newsletter-email" class="sr-only">E-mail</label>
           <input
             id="newsletter-email"
@@ -246,6 +252,7 @@
               class="logo-footer"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
+              loading="lazy"
             />
             <p>
               Seu portal de notícias sobre tecnologia, inovação e tendências do
@@ -281,10 +288,18 @@
           <div class="footer-section">
             <h4 class="footer-section-title">Siga-nos</h4>
             <div class="footer-social">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a aria-label="Instagram" href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a aria-label="Twitter" href="#"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a aria-label="Facebook" href="#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a aria-label="LinkedIn" href="#"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -293,8 +308,8 @@
         </div>
       </div>
     </footer>
+    <div class="menu-open-overlay"></div>
+    <script src="/js/ui.js"></script>
+    <script src="/js/filtro-busca.js"></script>
   </body>
-  <div class="menu-open-overlay"></div>
-  <script src="/js/ui.js"></script>
-  <script src="/js/filtro-busca.js"></script>
 </html>

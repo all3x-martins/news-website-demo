@@ -11,12 +11,13 @@
       name="keywords"
       content="desenvolvimento Android, APIs, produtividade, ferramentas para devs"
     />
+    <meta name="robots" content="index, follow" />
     <meta name="author" content="Tech Explorer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
-    <link rel="icon" href="/assets/icons/favicon/favicon.ico" />
+    <link rel="icon" href="/assets/icons/favicon/favicon.ico" loading="lazy" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -35,6 +36,7 @@
               class="menu-logo"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
+              loading="lazy"
             />
             <li class="menu-item">
               <i class="fa-solid fa-house"></i> <a href="/index.html">Início</a>
@@ -126,11 +128,11 @@
         >
 
         <section>
-          <h1>
+          <h1 class="title padding-bottom">
             Ferramentas para devs Android em 2025: APIs que turbinam a
             produtividade
           </h1>
-          <h2>
+          <h2 class="subtitle">
             As novas APIs trazem facilidades que vão acelerar o desenvolvimento
             de apps nativos e deixar seu workflow muito mais fluido.
           </h2>
@@ -159,7 +161,9 @@
             novidades?
           </p>
 
-          <h3>Jetpack Compose 2.0: declarativo com turbo</h3>
+          <h3 class="article-h3 padding-bottom">
+            Jetpack Compose 2.0: declarativo com turbo
+          </h3>
           <p>
             O <strong>Jetpack Compose</strong> já era queridinho, mas a versão
             2.0 veio com tudo. Com renderização ainda mais otimizada e
@@ -171,7 +175,9 @@
             <strong>Material You</strong>, sem precisar criar workarounds.
           </p>
 
-          <h3>Android Studio “Vortex”: IDE mais inteligente</h3>
+          <h3 class="article-h3 padding-bottom">
+            Android Studio “Vortex”: IDE mais inteligente
+          </h3>
           <p>
             O Android Studio ganhou o codinome <strong>Vortex</strong>, e não é
             à toa. O autocomplete está mais esperto, as sugestões de código
@@ -183,7 +189,9 @@
             fluida. É literalmente possível gerenciar releases sem sair da IDE.
           </p>
 
-          <h3>APIs de Inteligência Artificial embarcada</h3>
+          <h3 class="article-h3 padding-bottom">
+            APIs de Inteligência Artificial embarcada
+          </h3>
           <p>
             Se antes integrar IA era um trabalho braçal, agora ficou plug and
             play. Com as novas
@@ -195,7 +203,9 @@
             E sim, tudo otimizado para rodar liso até em dispositivos mid-range.
           </p>
 
-          <h3>Android App Bundles 2.0: deploy sem dor de cabeça</h3>
+          <h3 class="article-h3 padding-bottom">
+            Android App Bundles 2.0: deploy sem dor de cabeça
+          </h3>
           <p>
             Lançar apps está mais simples com o <strong>App Bundle 2.0</strong>.
             O processo de otimização de pacotes está automatizado e os recursos
@@ -207,7 +217,9 @@
             usuário.
           </p>
 
-          <h3>Ferramentas de acessibilidade by default</h3>
+          <h3 class="article-h3 padding-bottom">
+            Ferramentas de acessibilidade by default
+          </h3>
           <p>
             Outro destaque são os novos kits de acessibilidade para
             desenvolvedores. Agora, implementar recursos como navegação por voz,
@@ -238,7 +250,7 @@
           Receba as principais notícias e novidades sobre Android e tecnologia
           diretamente no seu e-mail.
         </p>
-        <form class="newsletter-form d-flex justify-center" autocomplete="off">
+        <form class="newsletter-form d-flex justify-center">
           <label for="newsletter-email" class="sr-only">E-mail</label>
           <input
             id="newsletter-email"
@@ -269,6 +281,7 @@
               class="logo-footer"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
+              loading="lazy"
             />
             <p>
               Seu portal de notícias sobre tecnologia, inovação e tendências do
@@ -304,10 +317,18 @@
           <div class="footer-section">
             <h4 class="footer-section-title">Siga-nos</h4>
             <div class="footer-social">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a aria-label="Instagram" href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a aria-label="Twitter" href="#"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a aria-label="Facebook" href="#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a aria-label="LinkedIn" href="#"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
           </div>
         </div>

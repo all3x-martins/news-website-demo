@@ -57,6 +57,37 @@ h6 {
   color: var(--cor-titulo, #1d3557);
 }
 
+p {
+  margin-bottom: 1rem;
+  color: var(--cor-texto-secundario, #555);
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--cor-titulo, #1d3557);
+  line-height: 1.4;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--cor-titulo, #1d3557);
+  line-height: 1.4;
+}
+
+.article-h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--cor-titulo, #1d3557);
+  line-height: 1.4;
+}
+
+.padding-bottom {
+  padding-bottom: 1rem;
+}
+
 /* ===================================
    Links & Interactions
 =================================== */

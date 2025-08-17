@@ -13,12 +13,13 @@
       name="keywords"
       content="Android, interface, acessibilidade, agilidade, design, experiência do usuário"
     />
+    <meta name="robots" content="index, follow" />
     <meta name="author" content="Tech Explorer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
-    <link rel="icon" href="/assets/icons/favicon/favicon.ico" />
+    <link rel="icon" href="/assets/icons/favicon/favicon.ico" loading="lazy" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -37,6 +38,7 @@
               class="menu-logo"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
+              loading="lazy"
             />
             <li class="menu-item">
               <i class="fa-solid fa-house"></i> <a href="/index.html">Início</a>
@@ -73,6 +75,7 @@
               class="menu-logo"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
+              loading="lazy"
           /></a>
         </div>
         <form class="search-form" id="search-form">
@@ -129,8 +132,10 @@
         </a>
 
         <header>
-          <h1>Interface nova, vibe nova: o Android repaginado</h1>
-          <h2>
+          <h1 class="title padding-bottom">
+            Interface nova, vibe nova: o Android repaginado
+          </h1>
+          <h2 class="subtitle">
             O novo visual foca em acessibilidade e agilidade. Veja como ele
             impacta a experiência de uso.
           </h2>
@@ -154,7 +159,9 @@
             acessível.
           </p>
 
-          <h3>Material You: Seu Android, sua cara</h3>
+          <h3 class="article-h3 padding-bottom">
+            Material You: Seu Android, sua cara
+          </h3>
           <p>
             A grande estrela dessa repaginada é o <strong>Material You</strong>.
             Não estamos falando só de mudar wallpapers. Agora, o Android adapta
@@ -167,7 +174,9 @@
             necessário.
           </p>
 
-          <h3>Menos poluição visual, mais foco</h3>
+          <h3 class="article-h3 padding-bottom">
+            Menos poluição visual, mais foco
+          </h3>
           <p>
             Uma das maiores mudanças foi a simplificação dos elementos de
             interface. Sabe aqueles menus com opções infinitas? Eles agora
@@ -180,7 +189,9 @@
             confortável.
           </p>
 
-          <h3>Acessibilidade que funciona (e não é só promessa)</h3>
+          <h3 class="article-h3 padding-bottom">
+            Acessibilidade que funciona (e não é só promessa)
+          </h3>
           <p>
             O Android não está só bonito, está mais inclusivo. Com novos
             recursos de leitura de tela, controle por voz aprimorado e suporte a
@@ -199,7 +210,7 @@
             para o usuário ser coautor da sua própria experiência.”
           </div>
 
-          <h3>Agilidade na palma da mão</h3>
+          <h3 class="article-h3 padding-bottom">Agilidade na palma da mão</h3>
           <p>
             A nova interface não é só estética. O Android está mais leve e
             otimizado. Os apps abrem mais rápido, a multitarefa ficou mais
@@ -230,7 +241,7 @@
           Receba as principais notícias e novidades sobre Android e tecnologia
           diretamente no seu e-mail.
         </p>
-        <form class="newsletter-form d-flex justify-center" autocomplete="off">
+        <form class="newsletter-form d-flex justify-center">
           <label for="newsletter-email" class="sr-only">E-mail</label>
           <input
             id="newsletter-email"
@@ -261,6 +272,7 @@
               class="logo-footer"
               src="/assets/imagens/logo/logo.png"
               alt="Logo Tech Explorer"
+              loading="lazy"
             />
             <p>
               Seu portal de notícias sobre tecnologia, inovação e tendências do
@@ -296,10 +308,18 @@
           <div class="footer-section">
             <h4 class="footer-section-title">Siga-nos</h4>
             <div class="footer-social">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a aria-label="Instagram" href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a aria-label="Twitter" href="#"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a aria-label="Facebook" href="#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a aria-label="LinkedIn" href="#"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
           </div>
         </div>
