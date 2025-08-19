@@ -619,15 +619,14 @@ footer {
   margin: 0 0.5rem;
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+.footer-description {
+  color: #f3f3f3;
+  margin: 0.5rem 0;
+}
+
+.footer-bottom-text {
+  color: #bbb;
+  margin: 0.5rem 0;
 }
 
 .newsletter-section {
