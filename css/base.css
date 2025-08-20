@@ -104,7 +104,7 @@ a:focus {
 
 a:focus {
   outline: 2px solid var(--cor-link, #07f);
-  outline-offset: 2px;
+  outline-offset: 0;
 }
 
 li {
