@@ -1,48 +1,41 @@
-# 📱 Tech Explorer - News Portal Demo
 
-**Portal de notícias responsivo sobre tecnologia e inovação Android - Projeto de demonstração frontend.**
+# Tech Explorer - News Portal Demo
 
-![MIT License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+**Portal de notícias responsivo sobre tecnologia e inovação Android. Projeto de demonstração frontend para portfólio.**
 
-## 📚 Sobre o Projeto
+[Ver Demo ao Vivo](https://blog-tech-explorer.vercel.app/)
 
-**Tech Explorer** é um site de demonstração para estudos e portfólio, com interface moderna e responsiva inspirada em portais de notícias. Foca em:
+## Sobre o Projeto
 
-- Design visual limpo e intuitivo.
-- Organização de conteúdo em grade.
-- Boas práticas em HTML, CSS e JavaScript.
-- Responsividade para desktops, tablets e smartphones.
+**Tech Explorer** é um site de demonstração criado para apresentar habilidades em front-end, com interface moderna e responsiva inspirada em portais de notícias. O projeto destaca:  
+- Layout em grade para organização eficiente de conteúdo  
+- Design limpo, intuitivo e mobile-first  
+- Boas práticas em HTML, CSS e JavaScript  
 
-## 🚀 Funcionalidades
+> Este projeto é fictício e serve exclusivamente como portfólio técnico.
 
-- Exibição de notícias em layout de grade.
-- Menu de navegação com links para seções.
-- Design responsivo com adaptação a diferentes telas.
-- Botões interativos com hover e transições suaves.
+## Funcionalidades
 
-## 🛠 Tecnologias
+- Exibição de notícias em layout de grade responsivo  
+- Menu de navegação com links para seções  
+- Botões e elementos interativos com transições suaves  
+- Adaptação automática a diferentes tamanhos de tela (desktop, tablet, mobile)  
 
-- **HTML5**: Estrutura semântica.
-- **CSS3**: Estilização com Flexbox e animações.
-- **JavaScript**: Interatividade básica.
+## Tecnologias Utilizadas
 
-## 📦 Como Executar
+- **HTML5**: Estrutura semântica e organizada  
+- **CSS3**: Flexbox, animações e responsividade  
+- **JavaScript**: Interatividade básica (menu hamburger e pesquisa de conteúdo) 
 
-1. Clone o repositório:
+## Como Executar Localmente
+
+1. Clone o repositório:  
    ```bash
    git clone https://github.com/all3x-martins/news-website-demo.git
-   ```
-2. Abra `index.html` no navegador ou acesse [online](https://blog-tech-explorer.vercel.app/).
-3. Explore as funcionalidades.
+   ```  
+2. Abra `index.html` no navegador de sua preferência  
+3. Explore o layout, interatividade e responsividade  
 
-## 📷 Captura de Tela
+## Licença
 
-<img width="1402" height="931" alt="screenshot" src="https://github.com/user-attachments/assets/050e84b4-3924-4e94-b332-4178796c3241" />
-
-## 📝 Licença
-
-Licença MIT. Veja [LICENSE](LICENSE) para detalhes.
+Distribuído sob a licença MIT. Consulte [LICENSE](LICENSE) para mais detalhes.
